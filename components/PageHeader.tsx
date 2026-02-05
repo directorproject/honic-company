@@ -16,14 +16,16 @@ export default function PageHeader({ title, currentPage, image = "/img/carousel-
         backgroundSize: "cover",
       }}
     >
-      <div className="row py-5">
+      <div className="row py-5 justify-content-center">
         <div className="col-12 pt-lg-5 mt-lg-5 text-center">
           <h1 className="display-4 text-white">{title}</h1>
-          <Link href="/" className="h5 text-white">
-            Home
-          </Link>
-          <i className="far fa-circle text-white px-2" />
-          <span className="h5 text-white">{currentPage}</span>
+          <div className="d-flex justify-content-center align-items-center flex-wrap gap-1 pt-1">
+            <Link href="/" className="h5 text-white text-decoration-none">
+              Home
+            </Link>
+            <i className="far fa-circle text-white px-2 small" />
+            <span className="h5 text-white">{currentPage}</span>
+          </div>
         </div>
       </div>
     </div>

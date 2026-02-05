@@ -249,6 +249,11 @@ h5, h6, .fw-medium { font-weight: 600 !important; }
   min-height: 280px;
   display: flex;
   align-items: center;
+  justify-content: center;
+}
+.page-header-hero .row {
+  justify-content: center;
+  width: 100%;
 }
 
 .back-to-top {
