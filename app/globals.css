@@ -244,6 +244,13 @@ h5, h6, .fw-medium { font-weight: 600 !important; }
   .facts { position: relative; margin-top: -75px; z-index: 1; }
 }
 
+/* Page header hero (inner pages) */
+.page-header-hero {
+  min-height: 280px;
+  display: flex;
+  align-items: center;
+}
+
 .back-to-top {
   position: fixed;
   display: none;
