@@ -172,6 +172,29 @@ h5, h6, .fw-medium { font-weight: 600 !important; }
 .section-title.text-center::before { left: 50%; margin-left: -75px; }
 .section-title.section-title-sm::before { width: 90px; height: 3px; }
 
+/* Shimmer animation for section title underlines (e.g. Quick Links, Get In Touch) */
+.section-title-shimmer::before {
+  background: linear-gradient(
+    90deg,
+    var(--primary) 0%,
+    rgba(255, 255, 255, 0.85) 40%,
+    var(--primary) 80%,
+    var(--primary) 100%
+  );
+  background-size: 200% 100%;
+  animation: underlineShimmer 2.5s ease-in-out infinite;
+}
+
+@keyframes underlineShimmer {
+  0%, 100% { background-position: 200% 0; }
+  50% { background-position: 0 0; }
+}
+
+/* Partner logos: consistent sizing, allow transparent or solid backgrounds */
+.partner-logo-wrap img {
+  object-fit: contain !important;
+}
+
 /* Service */
 .service-item {
   position: relative;

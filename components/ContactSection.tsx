@@ -23,7 +23,7 @@ export default function ContactSection() {
     <AnimateIn className="container-fluid py-5" animation="fadeUp">
       <div className="container py-5">
         <div
-          className="section-title text-center position-relative pb-3 mb-5 mx-auto"
+          className="section-title section-title-shimmer text-center position-relative pb-3 mb-5 mx-auto"
           style={{ maxWidth: 600 }}
         >
           <h5 className="fw-bold text-primary text-uppercase">Contact Us</h5>
@@ -33,7 +33,7 @@ export default function ContactSection() {
         </div>
         <div className="row g-5 mb-5">
           {contactItems.map((item, i) => (
-            <div key={i} className="col-lg-4">
+            <AnimateIn key={i} className="col-lg-4" animation="fadeUp" delay={i * 0.15}>
               <div className="d-flex align-items-center">
                 <div
                   className="bg-primary d-flex align-items-center justify-content-center rounded"
@@ -46,7 +46,7 @@ export default function ContactSection() {
                   <h4 className="text-primary mb-0">{item.value}</h4>
                 </div>
               </div>
-            </div>
+            </AnimateIn>
           ))}
         </div>
         <div className="row g-5">

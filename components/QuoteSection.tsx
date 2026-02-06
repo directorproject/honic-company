@@ -1,3 +1,4 @@
+import Link from "next/link";
 import AnimateIn from "./AnimateIn";
 
 export default function QuoteSection() {
@@ -6,7 +7,7 @@ export default function QuoteSection() {
       <div className="container py-5">
         <div className="row g-5">
           <div className="col-lg-7">
-            <div className="section-title position-relative pb-3 mb-5">
+            <div className="section-title section-title-shimmer position-relative pb-3 mb-5">
               <h5 className="fw-bold text-primary text-uppercase">
                 Request A Quote
               </h5>
@@ -35,18 +36,10 @@ export default function QuoteSection() {
               et. Dolores diam duo invidunt lorem. Elitr ut dolores magna sit.
               Sea dolore sanctus sed et. Takimata takimata sanctus sed.
             </p>
-            <div className="d-flex align-items-center mt-2">
-              <div
-                className="bg-primary d-flex align-items-center justify-content-center rounded"
-                style={{ width: 60, height: 60 }}
-              >
-                <i className="fa fa-phone-alt text-white" />
-              </div>
-              <div className="ps-4">
-                <h5 className="mb-2">Call to ask any question</h5>
-                <h4 className="text-primary mb-0">+012 345 6789</h4>
-              </div>
-            </div>
+            <p className="mb-0 mt-2">
+              For any questions or to get in touch, please visit our{" "}
+              <Link href="/contact" className="text-primary fw-bold">Contact page</Link>.
+            </p>
           </div>
           <div className="col-lg-5">
             <div className="bg-primary rounded h-100 d-flex align-items-center p-5">

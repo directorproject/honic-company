@@ -1,3 +1,4 @@
+import { Analytics } from "@vercel/analytics/next";
 import BootstrapClient from "@/components/BootstrapClient";
 import Spinner from "@/components/Spinner";
 import Topbar from "@/components/Topbar";
@@ -31,6 +32,7 @@ export default function ServicePage() {
       <VendorsSection />
       <Footer />
       <BackToTop />
+      <Analytics />
     </>
   );
 }

@@ -19,7 +19,7 @@ export default function TeamSection() {
     <AnimateIn className="container-fluid py-5" animation="fadeUp">
       <div className="container py-5">
         <div
-          className="section-title text-center position-relative pb-3 mb-5 mx-auto"
+          className="section-title section-title-shimmer text-center position-relative pb-3 mb-5 mx-auto"
           style={{ maxWidth: 600 }}
         >
           <h5 className="fw-bold text-primary text-uppercase">Team Members</h5>

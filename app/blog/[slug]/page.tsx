@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import { Analytics } from "@vercel/analytics/next";
 import BootstrapClient from "@/components/BootstrapClient";
 import Spinner from "@/components/Spinner";
 import Topbar from "@/components/Topbar";
@@ -101,6 +102,7 @@ export default async function BlogPostPage({
           </Link>
         </div>
         <Footer />
+        <Analytics />
       </>
     );
   }
@@ -156,6 +158,7 @@ export default async function BlogPostPage({
       </div>
       <Footer />
       <BackToTop />
+      <Analytics />
     </>
   );
 }

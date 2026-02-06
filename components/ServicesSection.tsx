@@ -1,3 +1,4 @@
+import Link from "next/link";
 import AnimateIn from "./AnimateIn";
 
 const services = [
@@ -16,7 +17,7 @@ export default function ServicesSection() {
     <AnimateIn className="container-fluid py-5" animation="fadeUp">
       <div className="container py-5">
         <div
-          className="section-title text-center position-relative pb-3 mb-5 mx-auto"
+          className="section-title section-title-shimmer text-center position-relative pb-3 mb-5 mx-auto"
           style={{ maxWidth: 600 }}
         >
           <h5 className="fw-bold text-primary text-uppercase">Our Services</h5>
@@ -40,14 +41,16 @@ export default function ServicesSection() {
             </div>
           ))}
           <div className="col-lg-4 col-md-6">
-            <div className="position-relative bg-primary rounded h-100 d-flex flex-column align-items-center justify-content-center text-center p-5">
-              <h3 className="text-white mb-3">Call Us For Quote</h3>
+            <Link
+              href="/contact"
+              className="position-relative bg-primary rounded h-100 d-flex flex-column align-items-center justify-content-center text-center p-5 text-decoration-none"
+            >
+              <h3 className="text-white mb-3">Get In Touch</h3>
               <p className="text-white mb-3">
-                Clita ipsum magna kasd rebum at ipsum amet dolor justo dolor est
-                magna stet eirmod
+                For quotes and inquiries, visit our contact page.
               </p>
-              <h2 className="text-white mb-0">+012 345 6789</h2>
-            </div>
+              <span className="btn btn-dark mt-2">Contact Us</span>
+            </Link>
           </div>
         </div>
       </div>

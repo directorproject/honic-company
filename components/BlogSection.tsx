@@ -64,7 +64,7 @@ export default function BlogSection() {
     <AnimateIn className="container-fluid py-5" animation="fadeUp">
       <div className="container py-5">
         <div
-          className="section-title text-center position-relative pb-3 mb-5 mx-auto"
+          className="section-title section-title-shimmer text-center position-relative pb-3 mb-5 mx-auto"
           style={{ maxWidth: 600 }}
         >
           <h5 className="fw-bold text-primary text-uppercase">Our Blog</h5>
@@ -72,7 +72,7 @@ export default function BlogSection() {
         </div>
         <div className="row g-5">
           {posts.map((post, i) => (
-            <div key={post.slug} className="col-lg-4 col-md-6">
+            <AnimateIn key={post.slug} className="col-lg-4 col-md-6" animation="slideUp" delay={i * 0.08}>
               <div className="blog-item bg-light rounded overflow-hidden h-100">
                 <div className="position-relative overflow-hidden" style={{ height: 240 }}>
                   <Image
@@ -108,7 +108,7 @@ export default function BlogSection() {
                   </Link>
                 </div>
               </div>
-            </div>
+            </AnimateIn>
           ))}
         </div>
       </div>

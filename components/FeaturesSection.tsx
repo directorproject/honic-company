@@ -14,7 +14,7 @@ export default function FeaturesSection() {
   return (
     <AnimateIn className="container-fluid py-5" animation="fadeUp">
       <div className="container py-5">
-        <div className="section-title text-center position-relative pb-3 mb-5 mx-auto" style={{ maxWidth: 600 }}>
+        <div className="section-title section-title-shimmer text-center position-relative pb-3 mb-5 mx-auto" style={{ maxWidth: 600 }}>
           <h5 className="fw-bold text-primary text-uppercase">Why Choose Us</h5>
           <h1 className="mb-0">We Are Here to Grow Your Business Exponentially</h1>
         </div>

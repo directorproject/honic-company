@@ -16,7 +16,7 @@ export default function TestimonialsSection() {
     <AnimateIn className="container-fluid py-5" animation="fadeUp">
       <div className="container py-5">
         <div
-          className="section-title text-center position-relative pb-3 mb-4 mx-auto"
+          className="section-title section-title-shimmer text-center position-relative pb-3 mb-4 mx-auto"
           style={{ maxWidth: 600 }}
         >
           <h5 className="fw-bold text-primary text-uppercase">Testimonial</h5>
@@ -26,7 +26,7 @@ export default function TestimonialsSection() {
         </div>
         <div className="row g-4">
           {testimonials.map((t, i) => (
-            <div key={i} className="col-lg-6 col-xl-3">
+            <AnimateIn key={i} className="col-lg-6 col-xl-3" animation="slideUp" delay={i * 0.1}>
               <div className="testimonial-item bg-light rounded my-4 p-0 overflow-hidden">
                 <div className="d-flex align-items-center border-bottom pt-5 pb-4 px-5">
                   <div
@@ -49,7 +49,7 @@ export default function TestimonialsSection() {
                 </div>
                 <div className="pt-4 pb-5 px-5">{quote}</div>
               </div>
-            </div>
+            </AnimateIn>
           ))}
         </div>
       </div>

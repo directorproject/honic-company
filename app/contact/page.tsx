@@ -1,3 +1,4 @@
+import { Analytics } from "@vercel/analytics/next";
 import BootstrapClient from "@/components/BootstrapClient";
 import Spinner from "@/components/Spinner";
 import Topbar from "@/components/Topbar";
@@ -5,7 +6,6 @@ import Navbar from "@/components/Navbar";
 import PageHeader from "@/components/PageHeader";
 import SearchModal from "@/components/SearchModal";
 import ContactSection from "@/components/ContactSection";
-import VendorsSection from "@/components/VendorsSection";
 import Footer from "@/components/Footer";
 import BackToTop from "@/components/BackToTop";
 
@@ -26,9 +26,9 @@ export default function ContactPage() {
       </div>
       <SearchModal />
       <ContactSection />
-      <VendorsSection />
       <Footer />
       <BackToTop />
+      <Analytics />
     </>
   );
 }

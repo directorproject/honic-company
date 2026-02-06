@@ -26,7 +26,7 @@ export default function Facts() {
   ];
 
   return (
-    <div className="container-fluid facts py-5 pt-lg-0">
+    <AnimateIn className="container-fluid facts py-5 pt-lg-0" animation="fadeUp">
       <div className="container py-5 pt-lg-0">
         <div className="row gx-0">
           {items.map((item, i) => (
@@ -56,6 +56,6 @@ export default function Facts() {
           ))}
         </div>
       </div>
-    </div>
+    </AnimateIn>
   );
 }
