@@ -35,16 +35,16 @@ export default function HeroCarousel() {
             <div className="carousel-caption d-flex flex-column align-items-center justify-content-center">
               <div className="p-3" style={{ maxWidth: 900 }}>
                 <h5 className="text-white text-uppercase mb-3 hero-animate hero-animate-slide-down">
-                  Creative & Innovative
+                  Education-Focused Innovation
                 </h5>
                 <h1 className="display-1 text-white mb-md-4 hero-animate hero-animate-zoom-in">
-                  Creative & Innovative Digital Solution
+                  Practical Learning for Every Student
                 </h1>
                 <Link
-                  href="/quote"
+                  href="/service"
                   className="btn btn-primary py-md-3 px-md-5 me-3 hero-animate hero-animate-slide-left"
                 >
-                  Free Quote
+                  Our Solutions
                 </Link>
                 <Link
                   href="/contact"

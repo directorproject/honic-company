@@ -10,8 +10,8 @@ import Footer from "@/components/Footer";
 import BackToTop from "@/components/BackToTop";
 
 export const metadata = {
-  title: "Blog - Honic",
-  description: "Latest articles and news from Honic",
+  title: "Blog - HonicLearn | News & Updates",
+  description: "Latest articles and updates from HonicLearn and practical education in Tanzania.",
 };
 
 export default function BlogPage() {

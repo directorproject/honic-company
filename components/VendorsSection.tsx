@@ -1,12 +1,10 @@
 import Image from "next/image";
 import AnimateIn from "./AnimateIn";
 
-const partners = [
-  { src: "/img/vendor-1.jpg", alt: "Samsung" },
-  { src: "/img/partner-dit.png", alt: "Dar es Salaam Institute of Technology" },
-  { src: "/img/partner-dit-studio.png", alt: "DIT Design Studio" },
-  { src: "/img/partner-swahili-dmakers.png", alt: "Swahili DMAKERS" },
-  { src: "/img/partner-google-pixel.png", alt: "Google Pixel" },
+const partnershipLogos = [
+  { src: "/img/dit_company.png", alt: "DIT Company", large: true },
+  { src: "/img/ds.png", alt: "DS", large: false },
+  { src: "/img/sdm.png", alt: "SDM", large: true, height: 180, maxWidth: 405 },
 ];
 
 export default function VendorsSection() {
@@ -14,19 +12,27 @@ export default function VendorsSection() {
     <AnimateIn className="container-fluid py-5" animation="fadeUp">
       <div className="container py-5 mb-5">
         <div className="bg-white">
+          <div className="text-center mb-4">
+            <h5 className="fw-bold text-primary text-uppercase">Our Partners</h5>
+            <h2 className="mb-0">Trusted by Leading Organizations</h2>
+          </div>
           <div className="row g-4 align-items-center justify-content-center">
-            {partners.map(({ src, alt }, i) => (
-              <div key={i} className="col-6 col-md-4 col-lg text-center">
+            {partnershipLogos.map(({ src, alt, large, height: customHeight, maxWidth: customMaxWidth }, i) => (
+              <div key={i} className="col-4 col-md-3 col-lg-2 text-center">
                 <div
-                  className="d-inline-block partner-logo-wrap"
-                  style={{ height: 56, position: "relative", width: "100%", maxWidth: 140 }}
+                  className="d-inline-block"
+                  style={{
+                    height: customHeight ?? (large ? 140 : 100),
+                    position: "relative",
+                    width: "100%",
+                    maxWidth: customMaxWidth ?? (large ? 400 : 300),
+                  }}
                 >
                   <Image
                     src={src}
                     alt={alt}
                     fill
                     style={{ objectFit: "contain" }}
-                    sizes="140px"
                     unoptimized
                   />
                 </div>

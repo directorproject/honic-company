@@ -15,8 +15,8 @@ const rubik = Rubik({
 });
 
 export const metadata: Metadata = {
-  title: "Honic - Creative & Innovative Digital Solution",
-  description: "Creative and innovative digital solutions for your business",
+  title: "HonicLearn – Practical Education & STEM Learning | Honic Company",
+  description: "HonicLearn designs and manufactures curriculum-based practical learning kits and skills development tools in Science, Engineering, and Technology. Empowering students across Tanzania.",
 };
 
 export default function RootLayout({

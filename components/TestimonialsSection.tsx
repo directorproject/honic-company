@@ -2,31 +2,31 @@ import Image from "next/image";
 import AnimateIn from "./AnimateIn";
 
 const testimonials = [
-  { img: "/img/testimonial-1.jpg", name: "Client Name", role: "Profession" },
-  { img: "/img/testimonial-2.jpg", name: "Client Name", role: "Profession" },
-  { img: "/img/testimonial-3.jpg", name: "Client Name", role: "Profession" },
-  { img: "/img/testimonial-4.jpg", name: "Client Name", role: "Profession" },
+  { img: "/img/testimonial-1.jpg", name: "School Partner", role: "Secondary School" },
+  { img: "/img/testimonial-2.jpg", name: "Education Partner", role: "University" },
+  { img: "/img/testimonial-3.jpg", name: "Institution Partner", role: "Education Institution" },
+  { img: "/img/testimonial-4.jpg", name: "Supplier Partner", role: "Local Partner" },
 ];
 
 const quote =
-  "Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam";
+  "HonicLearn kits and workshops have made a real difference in our students' engagement. Practical, curriculum-aligned, and easy for teachers to use.";
 
 export default function TestimonialsSection() {
   return (
     <AnimateIn className="container-fluid py-5" animation="fadeUp">
       <div className="container py-5">
         <div
-          className="section-title section-title-shimmer text-center position-relative pb-3 mb-4 mx-auto"
+          className="section-title text-center position-relative pb-3 mb-4 mx-auto"
           style={{ maxWidth: 600 }}
         >
-          <h5 className="fw-bold text-primary text-uppercase">Testimonial</h5>
+          <h5 className="fw-bold text-primary text-uppercase">Testimonials</h5>
           <h1 className="mb-0">
-            What Our Clients Say About Our Digital Services
+            What Schools & Partners Say About HonicLearn
           </h1>
         </div>
         <div className="row g-4">
           {testimonials.map((t, i) => (
-            <AnimateIn key={i} className="col-lg-6 col-xl-3" animation="slideUp" delay={i * 0.1}>
+            <div key={i} className="col-lg-6 col-xl-3">
               <div className="testimonial-item bg-light rounded my-4 p-0 overflow-hidden">
                 <div className="d-flex align-items-center border-bottom pt-5 pb-4 px-5">
                   <div
@@ -49,7 +49,7 @@ export default function TestimonialsSection() {
                 </div>
                 <div className="pt-4 pb-5 px-5">{quote}</div>
               </div>
-            </AnimateIn>
+            </div>
           ))}
         </div>
       </div>

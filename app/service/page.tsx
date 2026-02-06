@@ -12,8 +12,8 @@ import Footer from "@/components/Footer";
 import BackToTop from "@/components/BackToTop";
 
 export const metadata = {
-  title: "Our Services - Honic",
-  description: "Custom IT solutions for your business",
+  title: "Products & Services - HonicLearn | Practical Learning Solutions",
+  description: "R&D, workshops & training, maintenance, STEM learning kits, and inclusive digital programs for Tanzania.",
 };
 
 export default function ServicePage() {
@@ -24,7 +24,7 @@ export default function ServicePage() {
       <Topbar />
       <div className="container-fluid position-relative p-0">
         <Navbar />
-        <PageHeader title="Services" currentPage="Services" />
+        <PageHeader title="Products & Services" currentPage="Services" />
       </div>
       <SearchModal />
       <ServicesSection />

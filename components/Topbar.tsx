@@ -5,13 +5,13 @@ export default function Topbar() {
         <div className="col-lg-8 text-center text-lg-start mb-2 mb-lg-0">
           <div className="d-inline-flex align-items-center" style={{ height: 45 }}>
             <small className="me-3 text-light">
-              <i className="fa fa-map-marker-alt me-2" />123 Street, New York, USA
+              <i className="fa fa-map-marker-alt me-2" />Tanzania
             </small>
             <small className="me-3 text-light">
-              <i className="fa fa-phone-alt me-2" />+012 345 6789
+              <i className="fa fa-envelope-open me-2" />info@honiclearn.com
             </small>
             <small className="text-light">
-              <i className="fa fa-envelope-open me-2" />info@example.com
+              <i className="fa fa-graduation-cap me-2" />HonicLearn · Practical Education
             </small>
           </div>
         </div>

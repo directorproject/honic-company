@@ -2,21 +2,21 @@ import Image from "next/image";
 import AnimateIn from "./AnimateIn";
 
 const leftFeatures = [
-  { icon: "fa fa-cubes", title: "Best In Industry", text: "Magna sea eos sit dolor, ipsum amet lorem diam dolor eos et diam dolor" },
-  { icon: "fa fa-award", title: "Award Winning", text: "Magna sea eos sit dolor, ipsum amet lorem diam dolor eos et diam dolor" },
+  { icon: "fa fa-cubes", title: "Curriculum-Aligned", text: "STEM and skills-development kits aligned with Tanzania Education and Training Policy (Elimu Amali) for practical, hands-on learning." },
+  { icon: "fa fa-lightbulb", title: "Innovation & R&D", text: "Research and project implementation to identify gaps and develop innovative educational tools for schools and communities." },
 ];
 const rightFeatures = [
-  { icon: "fa fa-users-cog", title: "Professional Staff", text: "Magna sea eos sit dolor, ipsum amet lorem diam dolor eos et diam dolor" },
-  { icon: "fa fa-phone-alt", title: "24/7 Support", text: "Magna sea eos sit dolor, ipsum amet lorem diam dolor eos et diam dolor" },
+  { icon: "fa fa-users-cog", title: "Workshops & Training", text: "Interactive sessions for students and teachers to build practical skills, technical competencies, and problem-solving abilities." },
+  { icon: "fa fa-universal-access", title: "Inclusive Learning", text: "Programs for students with disabilities and underrepresented groups, with accessible kits and sign language support." },
 ];
 
 export default function FeaturesSection() {
   return (
     <AnimateIn className="container-fluid py-5" animation="fadeUp">
       <div className="container py-5">
-        <div className="section-title section-title-shimmer text-center position-relative pb-3 mb-5 mx-auto" style={{ maxWidth: 600 }}>
-          <h5 className="fw-bold text-primary text-uppercase">Why Choose Us</h5>
-          <h1 className="mb-0">We Are Here to Grow Your Business Exponentially</h1>
+        <div className="section-title text-center position-relative pb-3 mb-5 mx-auto" style={{ maxWidth: 600 }}>
+          <h5 className="fw-bold text-primary text-uppercase">Why HonicLearn</h5>
+          <h1 className="mb-0">Practical Education That Empowers Every Student</h1>
         </div>
         <div className="row g-5">
           <div className="col-lg-4">

@@ -2,19 +2,19 @@ import AnimateIn from "./AnimateIn";
 
 const contactItems = [
   {
-    icon: "fa fa-phone-alt",
-    title: "Call to ask any question",
-    value: "+012 345 6789",
+    icon: "fa fa-envelope-open",
+    title: "Email us",
+    value: "info@honiclearn.com",
   },
   {
-    icon: "fa fa-envelope-open",
-    title: "Email to get free quote",
-    value: "info@example.com",
+    icon: "fa fa-school",
+    title: "For schools & institutions",
+    value: "Kits, workshops, support",
   },
   {
     icon: "fa fa-map-marker-alt",
-    title: "Visit our office",
-    value: "123 Street, NY, USA",
+    title: "Location",
+    value: "Tanzania",
   },
 ];
 
@@ -23,17 +23,17 @@ export default function ContactSection() {
     <AnimateIn className="container-fluid py-5" animation="fadeUp">
       <div className="container py-5">
         <div
-          className="section-title section-title-shimmer text-center position-relative pb-3 mb-5 mx-auto"
+          className="section-title text-center position-relative pb-3 mb-5 mx-auto"
           style={{ maxWidth: 600 }}
         >
           <h5 className="fw-bold text-primary text-uppercase">Contact Us</h5>
           <h1 className="mb-0">
-            If You Have Any Query, Feel Free To Contact Us
+            Partner With HonicLearn — Schools, Institutions & Suppliers
           </h1>
         </div>
         <div className="row g-5 mb-5">
           {contactItems.map((item, i) => (
-            <AnimateIn key={i} className="col-lg-4" animation="fadeUp" delay={i * 0.15}>
+            <div key={i} className="col-lg-4">
               <div className="d-flex align-items-center">
                 <div
                   className="bg-primary d-flex align-items-center justify-content-center rounded"
@@ -46,13 +46,13 @@ export default function ContactSection() {
                   <h4 className="text-primary mb-0">{item.value}</h4>
                 </div>
               </div>
-            </AnimateIn>
+            </div>
           ))}
         </div>
         <div className="row g-5">
           <div className="col-lg-6">
             <h4 className="mb-4">
-              Send us a message and we will get back to you as soon as possible.
+              Get in touch for learning kits, workshops, maintenance, or partnership. We will respond as soon as possible.
             </h4>
             <form>
               <div className="row g-3">

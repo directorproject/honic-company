@@ -3,8 +3,8 @@ import Link from "next/link";
 const quickLinks = [
   { label: "Home", href: "/" },
   { label: "About Us", href: "/about" },
-  { label: "Our Services", href: "/service" },
-  { label: "Latest Blog", href: "/blog" },
+  { label: "Products & Services", href: "/service" },
+  { label: "Blog", href: "/blog" },
   { label: "Contact Us", href: "/contact" },
 ];
 
@@ -18,31 +18,52 @@ export default function Footer() {
               <div className="d-flex flex-column align-items-center justify-content-center text-center h-100 bg-primary p-4">
                 <Link href="/" className="navbar-brand">
                   <h1 className="m-0 text-white">
-                    <i className="fa fa-user-tie me-2" />Honic
+                    <i className="fa fa-graduation-cap me-2" />HonicLearn
                   </h1>
                 </Link>
                 <p className="mt-3 mb-4">
-                  Personal subscription to our website: enter your email for updates, news, and offers.
+                  HonicLearn is an education-focused innovation department under Honic Company Limited, designing and manufacturing practical learning kits and skills development tools for Tanzania.
                 </p>
-                <form action="">
-                  <div className="input-group">
-                    <input
-                      type="email"
-                      className="form-control border-white p-3"
-                      placeholder="Your Email"
-                      aria-label="Email"
-                    />
-                    <button className="btn btn-dark" type="submit">
-                      Subscribe
-                    </button>
-                  </div>
-                </form>
+                <Link href="/contact" className="btn btn-dark mt-2">
+                  Get In Touch
+                </Link>
               </div>
             </div>
             <div className="col-lg-8 col-md-6">
               <div className="row gx-5">
-                <div className="col-lg-6 col-md-12 pt-5 mb-5">
-                  <div className="section-title section-title-sm section-title-shimmer position-relative pb-3 mb-4">
+                <div className="col-lg-4 col-md-12 pt-5 mb-5">
+                  <div className="section-title section-title-sm position-relative pb-3 mb-4">
+                    <h3 className="text-light mb-0">Get In Touch</h3>
+                  </div>
+                  <div className="d-flex mb-2">
+                    <i className="bi bi-geo-alt text-primary me-2 mt-1" />
+                    <p className="mb-0">Tanzania</p>
+                  </div>
+                  <div className="d-flex mb-2">
+                    <i className="bi bi-envelope-open text-primary me-2 mt-1" />
+                    <p className="mb-0">info@honiclearn.com</p>
+                  </div>
+                  <div className="d-flex mb-2">
+                    <i className="bi bi-telephone text-primary me-2 mt-1" />
+                    <p className="mb-0">Contact via form</p>
+                  </div>
+                  <div className="d-flex mt-4">
+                    <a className="btn btn-primary btn-square me-2" href="#">
+                      <i className="fab fa-twitter fw-normal" />
+                    </a>
+                    <a className="btn btn-primary btn-square me-2" href="#">
+                      <i className="fab fa-facebook-f fw-normal" />
+                    </a>
+                    <a className="btn btn-primary btn-square me-2" href="#">
+                      <i className="fab fa-linkedin-in fw-normal" />
+                    </a>
+                    <a className="btn btn-primary btn-square" href="#">
+                      <i className="fab fa-instagram fw-normal" />
+                    </a>
+                  </div>
+                </div>
+                <div className="col-lg-4 col-md-12 pt-0 pt-lg-5 mb-5">
+                  <div className="section-title section-title-sm position-relative pb-3 mb-4">
                     <h3 className="text-light mb-0">Quick Links</h3>
                   </div>
                   <div className="link-animated d-flex flex-column justify-content-start">
@@ -58,8 +79,8 @@ export default function Footer() {
                     ))}
                   </div>
                 </div>
-                <div className="col-lg-6 col-md-12 pt-0 pt-lg-5 mb-5">
-                  <div className="section-title section-title-sm section-title-shimmer position-relative pb-3 mb-4">
+                <div className="col-lg-4 col-md-12 pt-0 pt-lg-5 mb-5">
+                  <div className="section-title section-title-sm position-relative pb-3 mb-4">
                     <h3 className="text-light mb-0">Popular Links</h3>
                   </div>
                   <div className="link-animated d-flex flex-column justify-content-start">
@@ -89,7 +110,7 @@ export default function Footer() {
                 style={{ height: 75 }}
               >
                 <p className="mb-0">
-                  &copy; <span className="text-white border-bottom">Honic</span>. All Rights Reserved.
+                  &copy; <span className="text-white border-bottom">HonicLearn</span> · Honic Company Limited. All Rights Reserved.
                 </p>
               </div>
             </div>

@@ -28,7 +28,7 @@ export default function Navbar() {
     >
       <Link href="/" className="navbar-brand p-0">
         <h1 className="m-0">
-          <i className="fa fa-user-tie me-2" />Honic
+          <i className="fa fa-graduation-cap me-2" />HonicLearn
         </h1>
       </Link>
       <button
@@ -64,7 +64,7 @@ export default function Navbar() {
           <i className="fa fa-search" />
         </button>
         <Link href="/contact" className="btn btn-primary py-2 px-4 ms-3">
-          Get a Quote
+          Contact Us
         </Link>
       </div>
     </nav>

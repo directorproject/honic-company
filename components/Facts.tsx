@@ -3,30 +3,30 @@ import AnimateIn from "./AnimateIn";
 export default function Facts() {
   const items = [
     {
-      icon: "fa fa-users",
-      title: "Happy Clients",
-      value: "12345",
+      icon: "fa fa-school",
+      title: "Institutions Served",
+      value: "19+",
       primary: true,
       delay: 0.1,
     },
     {
-      icon: "fa fa-check",
-      title: "Projects Done",
-      value: "12345",
+      icon: "fa fa-users",
+      title: "Students Impacted",
+      value: "1,500+",
       primary: false,
       delay: 0.3,
     },
     {
-      icon: "fa fa-award",
-      title: "Win Awards",
-      value: "12345",
+      icon: "fa fa-cubes",
+      title: "STEM Kits Delivered",
+      value: "500+",
       primary: true,
       delay: 0.6,
     },
   ];
 
   return (
-    <AnimateIn className="container-fluid facts py-5 pt-lg-0" animation="fadeUp">
+    <div className="container-fluid facts py-5 pt-lg-0">
       <div className="container py-5 pt-lg-0">
         <div className="row gx-0">
           {items.map((item, i) => (
@@ -56,6 +56,6 @@ export default function Facts() {
           ))}
         </div>
       </div>
-    </AnimateIn>
+    </div>
   );
 }

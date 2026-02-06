@@ -5,15 +5,17 @@ import Topbar from "@/components/Topbar";
 import Navbar from "@/components/Navbar";
 import PageHeader from "@/components/PageHeader";
 import SearchModal from "@/components/SearchModal";
-import AboutSection from "@/components/AboutSection";
+import AboutHonicLearnIntro from "@/components/AboutHonicLearnIntro";
+import VisionMissionSection from "@/components/VisionMissionSection";
+import AchievementsSection from "@/components/AchievementsSection";
 import TeamSection from "@/components/TeamSection";
 import VendorsSection from "@/components/VendorsSection";
 import Footer from "@/components/Footer";
 import BackToTop from "@/components/BackToTop";
 
 export const metadata = {
-  title: "About Us - Honic",
-  description: "Learn about our IT solutions and team",
+  title: "About HonicLearn - Vision, Mission & History | Honic Company",
+  description: "HonicLearn bridges theory and hands-on learning in Tanzania. Established March 2025. Vision, mission, and background.",
 };
 
 export default function AboutPage() {
@@ -24,10 +26,12 @@ export default function AboutPage() {
       <Topbar />
       <div className="container-fluid position-relative p-0">
         <Navbar />
-        <PageHeader title="About Us" currentPage="About" />
+        <PageHeader title="About HonicLearn" currentPage="About" />
       </div>
       <SearchModal />
-      <AboutSection />
+      <AboutHonicLearnIntro />
+      <VisionMissionSection />
+      <AchievementsSection />
       <TeamSection />
       <VendorsSection />
       <Footer />
