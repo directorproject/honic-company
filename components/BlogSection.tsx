@@ -7,7 +7,7 @@ const posts = [
     slug: "creative-digital-solutions",
     title: "Creative & Innovative Digital Solutions",
     excerpt:
-      "Diam dolor diam ipsum et tempor sit. Aliqu diam amet diam et eos labore. Clita erat ipsum et lorem et sit.",
+      "How HonicLearn combines practical systems and digital delivery to turn curriculum into measurable skills.",
     date: "Jan 01, 2025",
     image: "/img/carousel-1.jpg",
     author: "Admin",
@@ -16,25 +16,25 @@ const posts = [
     slug: "it-solutions-for-business",
     title: "Custom IT Solutions for Your Business",
     excerpt:
-      "Diam dolor diam ipsum et tempor sit. Aliqu diam amet diam et eos labore. Clita erat ipsum et lorem et sit.",
+      "A practical approach to custom platforms for training operations, reporting, and service growth.",
     date: "Jan 02, 2025",
     image: "/img/carousel-2.jpg",
     author: "Admin",
   },
   {
     slug: "grow-your-business",
-    title: "We Are Here to Grow Your Business",
+    title: "Hands-On Workshops: Soldering & Electronics in Action",
     excerpt:
-      "Diam dolor diam ipsum et tempor sit. Aliqu diam amet diam et eos labore. Clita erat ipsum et lorem et sit.",
+      "Practical workshops where students build real skills through soldering, assembly, and guided troubleshooting.",
     date: "Jan 03, 2025",
-    image: "/img/feature.jpg",
-    author: "Admin",
+    image: "/img/blog-workshop-soldering.png",
+    author: "HonicLearn",
   },
   {
     slug: "cyber-security-tips",
     title: "Cyber Security Best Practices in 2025",
     excerpt:
-      "Diam dolor diam ipsum et tempor sit. Aliqu diam amet diam et eos labore. Clita erat ipsum et lorem et sit.",
+      "Core cyber security controls every education and training organization should implement first.",
     date: "Jan 04, 2025",
     image: "/img/about.jpg",
     author: "Admin",
@@ -43,7 +43,7 @@ const posts = [
     slug: "web-development-trends",
     title: "Web Development Trends to Watch",
     excerpt:
-      "Diam dolor diam ipsum et tempor sit. Aliqu diam amet diam et eos labore. Clita erat ipsum et lorem et sit.",
+      "Key web trends shaping faster, accessible, and scalable digital learning platforms.",
     date: "Jan 05, 2025",
     image: "/img/team-1.jpg",
     author: "Admin",
@@ -52,10 +52,28 @@ const posts = [
     slug: "digital-transformation",
     title: "Digital Transformation for Startups",
     excerpt:
-      "Diam dolor diam ipsum et tempor sit. Aliqu diam amet diam et eos labore. Clita erat ipsum et lorem et sit.",
+      "A phased transformation model that helps startups scale operations without losing control.",
     date: "Jan 06, 2025",
     image: "/img/team-2.jpg",
     author: "Admin",
+  },
+  {
+    slug: "pcb-milling-workshop",
+    title: "Practical Skills: PCB Milling & Precision Tools in the Workshop",
+    excerpt:
+      "Learners use precision tools and rotary equipment to work on real circuit boards in HonicLearn workshops.",
+    date: "Feb 06, 2026",
+    image: "/img/blog-pcb-workshop.png",
+    author: "HonicLearn",
+  },
+  {
+    slug: "honiclearn-resistor-kits",
+    title: "HonicLearn Resistor Kits: Hands-On Components for STEM Learning",
+    excerpt:
+      "Curriculum-aligned resistor modules and components for practical electronics and physics experiments.",
+    date: "Feb 06, 2026",
+    image: "/img/blog-resistor-kits.png",
+    author: "HonicLearn",
   },
 ];
 
@@ -71,7 +89,7 @@ export default function BlogSection() {
           <h1 className="mb-0">Latest Articles & News</h1>
         </div>
         <div className="row g-5">
-          {posts.map((post, i) => (
+          {posts.map((post) => (
             <div key={post.slug} className="col-lg-4 col-md-6">
               <div className="blog-item bg-light rounded overflow-hidden h-100">
                 <div className="position-relative overflow-hidden" style={{ height: 240 }}>
@@ -100,10 +118,7 @@ export default function BlogSection() {
                   </div>
                   <h5 className="mb-3">{post.title}</h5>
                   <p className="mb-3 text-muted">{post.excerpt}</p>
-                  <Link
-                    href={`/blog/${post.slug}`}
-                    className="text-primary fw-medium"
-                  >
+                  <Link href={`/blog/${post.slug}`} className="text-primary fw-medium">
                     Read More <i className="bi bi-arrow-right ms-1" />
                   </Link>
                 </div>

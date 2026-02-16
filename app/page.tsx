@@ -10,7 +10,6 @@ import AboutSection from "@/components/AboutSection";
 import FeaturesSection from "@/components/FeaturesSection";
 import ServicesSection from "@/components/ServicesSection";
 import QuoteSection from "@/components/QuoteSection";
-import TestimonialsSection from "@/components/TestimonialsSection";
 import TeamSection from "@/components/TeamSection";
 import VendorsSection from "@/components/VendorsSection";
 import Footer from "@/components/Footer";
@@ -32,7 +31,6 @@ export default function Home() {
       <FeaturesSection />
       <ServicesSection />
       <QuoteSection />
-      <TestimonialsSection />
       <TeamSection />
       <VendorsSection />
       <Footer />

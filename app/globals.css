@@ -256,6 +256,71 @@ h5, h6, .fw-medium { font-weight: 600 !important; }
   width: 100%;
 }
 
+/* About quote responsive sizing */
+.about-quote {
+  font-size: 1.05rem;
+}
+@media (max-width: 576px) {
+  .about-quote {
+    font-size: 0.85rem;
+    line-height: 1.6;
+    padding-left: 0.35rem !important;
+    padding-right: 0.35rem !important;
+  }
+  .about-quote-wrap {
+    padding-left: 0.35rem !important;
+    padding-right: 0.35rem !important;
+  }
+}
+@media (min-width: 577px) and (max-width: 991.98px) {
+  .about-quote {
+    font-size: 0.95rem;
+  }
+}
+
+/* Blog post single page: image container for consistent fit */
+.blog-post-image {
+  height: 420px;
+  background: #f8f9fa;
+}
+
+/* Service cards responsive layout */
+.service-card-layout {
+  display: flex;
+  flex-direction: column;
+}
+
+.service-card-media {
+  width: 100%;
+  min-height: 220px;
+}
+
+@media (min-width: 1200px) {
+  .service-card-layout {
+    flex-direction: row;
+  }
+
+  .service-card-media {
+    width: 300px;
+    align-self: stretch;
+    min-height: auto;
+  }
+}
+
+/* Why choose us section image on mobile */
+@media (max-width: 576px) {
+  .why-choose-image {
+    min-height: 240px !important;
+  }
+}
+
+/* Service detail hero image on mobile */
+@media (max-width: 576px) {
+  .service-detail-hero-image {
+    min-height: 260px !important;
+  }
+}
+
 .back-to-top {
   position: fixed;
   display: none;
@@ -269,6 +334,17 @@ h5, h6, .fw-medium { font-weight: 600 !important; }
 
 @media (min-width: 767.98px) {
   .footer-about { margin-bottom: -75px; }
+}
+
+@media (max-width: 576px) {
+  .about-honic-intro {
+    padding-top: 2rem !important;
+    padding-bottom: 2rem !important;
+  }
+  .about-honic-intro-inner {
+    padding-top: 1.5rem !important;
+    padding-bottom: 1.5rem !important;
+  }
 }
 
 /* Scroll-triggered animations */
@@ -340,6 +416,42 @@ h5, h6, .fw-medium { font-weight: 600 !important; }
 @keyframes animFadeIn {
   from { opacity: 0; }
   to { opacity: 1; }
+}
+
+.animate-slideFromLeft {
+  opacity: 0;
+  transform: translateX(-80px);
+}
+.animate-in-visible.animate-slideFromLeft {
+  animation: animSlideFromLeft 0.7s ease forwards;
+}
+@keyframes animSlideFromLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-80px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Continuous animation for light blue containers when in view */
+.container-continuous.animate-in-visible {
+  animation: animSlideFromLeft 0.7s ease forwards,
+    containerPulse 3s ease-in-out 0.75s infinite;
+}
+.container-continuous.animate-in-visible.animate-slideFromLeft {
+  animation: animSlideFromLeft 0.7s ease forwards,
+    containerPulse 3s ease-in-out 0.75s infinite;
+}
+@keyframes containerPulse {
+  0%, 100% {
+    box-shadow: 0 4px 24px rgba(9, 30, 62, 0.12), 0 0 0 1px rgba(9, 30, 62, 0.08);
+  }
+  50% {
+    box-shadow: 0 8px 36px rgba(9, 30, 62, 0.18), 0 0 0 1px rgba(9, 30, 62, 0.1);
+  }
 }
 
 /* Hero carousel caption animations (run when slide is active) */

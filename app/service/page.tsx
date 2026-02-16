@@ -5,8 +5,8 @@ import Topbar from "@/components/Topbar";
 import Navbar from "@/components/Navbar";
 import PageHeader from "@/components/PageHeader";
 import SearchModal from "@/components/SearchModal";
+import ProductsServicesDetail from "@/components/ProductsServicesDetail";
 import ServicesSection from "@/components/ServicesSection";
-import TestimonialsSection from "@/components/TestimonialsSection";
 import VendorsSection from "@/components/VendorsSection";
 import Footer from "@/components/Footer";
 import BackToTop from "@/components/BackToTop";
@@ -27,9 +27,39 @@ export default function ServicePage() {
         <PageHeader title="Products & Services" currentPage="Services" />
       </div>
       <SearchModal />
-      <ServicesSection />
-      <TestimonialsSection />
-      <VendorsSection />
+      <section
+        className="container-fluid py-4"
+        style={{
+          background: "linear-gradient(135deg, rgba(9, 30, 62, 0.05), rgba(9, 30, 62, 0.01))",
+          borderBottom: "1px solid rgba(9, 30, 62, 0.08)",
+        }}
+      >
+        <div className="container">
+          <div className="row g-3 align-items-center">
+            <div className="col-lg-8">
+              <h5 className="fw-bold text-primary text-uppercase mb-2">Service Approach</h5>
+              <p className="mb-0" style={{ color: "#3c4a63", lineHeight: 1.7 }}>
+                End-to-end practical education delivery: solution design, kit deployment,
+                training, and long-term technical support.
+              </p>
+            </div>
+            <div className="col-lg-4 text-lg-end">
+              <a href="#service-packages" className="btn btn-primary px-4 py-2">
+                Explore Services
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="service-packages">
+        <ProductsServicesDetail />
+      </section>
+      <section>
+        <ServicesSection />
+      </section>
+      <section>
+        <VendorsSection />
+      </section>
       <Footer />
       <BackToTop />
       <Analytics />

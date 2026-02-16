@@ -25,7 +25,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${nunito.variable} ${rubik.variable}`}>
+    <html
+      lang="en"
+      className={`${nunito.variable} ${rubik.variable}`}
+      suppressHydrationWarning
+    >
       <head>
         <link
           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
@@ -36,7 +40,10 @@ export default function RootLayout({
           rel="stylesheet"
         />
       </head>
-      <body style={{ fontFamily: "var(--font-rubik), sans-serif" }}>
+      <body
+        style={{ fontFamily: "var(--font-rubik), sans-serif" }}
+        suppressHydrationWarning
+      >
         {children}
       </body>
     </html>

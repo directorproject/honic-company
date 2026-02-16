@@ -2,13 +2,14 @@
 
 import { useRef, useEffect, useState, type ReactNode } from "react";
 
-type AnimationType = "fadeUp" | "zoomIn" | "slideUp" | "fadeIn";
+type AnimationType = "fadeUp" | "zoomIn" | "slideUp" | "fadeIn" | "slideFromLeft";
 
 interface AnimateInProps {
   children: ReactNode;
   animation?: AnimationType;
   delay?: number;
   className?: string;
+  style?: React.CSSProperties;
 }
 
 export default function AnimateIn({
@@ -16,6 +17,7 @@ export default function AnimateIn({
   animation = "fadeUp",
   delay = 0,
   className = "",
+  style = {},
 }: AnimateInProps) {
   const ref = useRef<HTMLDivElement>(null);
   const [inView, setInView] = useState(false);
@@ -39,7 +41,7 @@ export default function AnimateIn({
     <div
       ref={ref}
       className={`animate-in animate-${animation} ${inView ? "animate-in-visible" : ""} ${className}`}
-      style={{ animationDelay: delay ? `${delay}s` : undefined }}
+      style={{ animationDelay: delay ? `${delay}s` : undefined, ...style }}
     >
       {children}
     </div>

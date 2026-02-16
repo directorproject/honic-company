@@ -9,8 +9,8 @@ const partnershipLogos = [
 
 export default function VendorsSection() {
   return (
-    <AnimateIn className="container-fluid py-5" animation="fadeUp">
-      <div className="container py-5 mb-5">
+    <AnimateIn className="container-fluid py-4" animation="fadeUp">
+      <div className="container py-4 mb-2">
         <div className="bg-white">
           <div className="text-center mb-4">
             <h5 className="fw-bold text-primary text-uppercase">Our Partners</h5>

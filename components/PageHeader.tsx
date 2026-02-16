@@ -11,7 +11,7 @@ export default function PageHeader({ title, currentPage, image = "/img/carousel-
     <div
       className="page-header-hero container-fluid py-5"
       style={{
-        marginBottom: 90,
+        marginBottom: 50,
         background: `linear-gradient(rgba(9, 30, 62, 0.85), rgba(9, 30, 62, 0.85)), url(${image}) center center no-repeat`,
         backgroundSize: "cover",
       }}
