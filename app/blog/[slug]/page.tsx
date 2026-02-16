@@ -66,7 +66,7 @@ const posts: Record<string, BlogPost> = {
   "web-development-trends": {
     title: "Web Development Trends to Watch",
     date: "Jan 05, 2025",
-    image: "/img/blog-web-development.png",
+    image: "/img/blog-web-development-trends.png",
     author: "Admin",
     content: [
       "Web platforms continue moving toward modular architecture, faster delivery, and stronger accessibility standards. For education-focused organizations, this directly improves user experience and adoption.",

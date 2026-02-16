@@ -45,7 +45,7 @@ const posts = [
     excerpt:
       "Key web trends shaping faster, accessible, and scalable digital learning platforms.",
     date: "Jan 05, 2025",
-    image: "/img/team-1.jpg",
+    image: "/img/blog-web-development-trends.png",
     author: "Admin",
   },
   {
