@@ -5,7 +5,7 @@ import BootstrapClient from "@/components/BootstrapClient";
 import Spinner from "@/components/Spinner";
 import Topbar from "@/components/Topbar";
 import Navbar from "@/components/Navbar";
-import PageHeader from "@/components/PageHeader";
+import HeroCarousel from "@/components/HeroCarousel";
 import SearchModal from "@/components/SearchModal";
 import Footer from "@/components/Footer";
 import BackToTop from "@/components/BackToTop";
@@ -162,7 +162,7 @@ export default async function BlogPostPage({
       <Topbar />
       <div className="container-fluid position-relative p-0">
         <Navbar />
-        <PageHeader title={post.title} currentPage="Blog" />
+        <HeroCarousel title={post.title} subtitle="Blog Post" showButtons={false} currentPage="Blog" />
       </div>
       <SearchModal />
       <div className="container-fluid py-5">

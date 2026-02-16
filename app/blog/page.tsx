@@ -3,7 +3,7 @@ import BootstrapClient from "@/components/BootstrapClient";
 import Spinner from "@/components/Spinner";
 import Topbar from "@/components/Topbar";
 import Navbar from "@/components/Navbar";
-import PageHeader from "@/components/PageHeader";
+import HeroCarousel from "@/components/HeroCarousel";
 import SearchModal from "@/components/SearchModal";
 import BlogSection from "@/components/BlogSection";
 import Footer from "@/components/Footer";
@@ -22,7 +22,7 @@ export default function BlogPage() {
       <Topbar />
       <div className="container-fluid position-relative p-0">
         <Navbar />
-        <PageHeader title="Our Blog" currentPage="Blog" />
+        <HeroCarousel title="Our Blog" subtitle="Latest Articles & News" showButtons={false} currentPage="Blog" />
       </div>
       <SearchModal />
       <BlogSection />

@@ -3,7 +3,7 @@ import BootstrapClient from "@/components/BootstrapClient";
 import Spinner from "@/components/Spinner";
 import Topbar from "@/components/Topbar";
 import Navbar from "@/components/Navbar";
-import PageHeader from "@/components/PageHeader";
+import HeroCarousel from "@/components/HeroCarousel";
 import SearchModal from "@/components/SearchModal";
 import ContactSection from "@/components/ContactSection";
 import VendorsSection from "@/components/VendorsSection";
@@ -23,7 +23,7 @@ export default function ContactPage() {
       <Topbar />
       <div className="container-fluid position-relative p-0">
         <Navbar />
-        <PageHeader title="Contact Us" currentPage="Contact" />
+        <HeroCarousel title="Contact Us" subtitle="Get In Touch" showButtons={false} currentPage="Contact" />
       </div>
       <SearchModal />
       <ContactSection />

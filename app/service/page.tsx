@@ -3,7 +3,7 @@ import BootstrapClient from "@/components/BootstrapClient";
 import Spinner from "@/components/Spinner";
 import Topbar from "@/components/Topbar";
 import Navbar from "@/components/Navbar";
-import PageHeader from "@/components/PageHeader";
+import HeroCarousel from "@/components/HeroCarousel";
 import SearchModal from "@/components/SearchModal";
 import ProductsServicesDetail from "@/components/ProductsServicesDetail";
 import ServicesSection from "@/components/ServicesSection";
@@ -24,7 +24,7 @@ export default function ServicePage() {
       <Topbar />
       <div className="container-fluid position-relative p-0">
         <Navbar />
-        <PageHeader title="Products & Services" currentPage="Services" />
+        <HeroCarousel title="Products & Services" subtitle="Practical Learning Solutions" showButtons={false} currentPage="Services" />
       </div>
       <SearchModal />
       <section

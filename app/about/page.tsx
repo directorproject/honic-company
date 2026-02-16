@@ -3,7 +3,7 @@ import BootstrapClient from "@/components/BootstrapClient";
 import Spinner from "@/components/Spinner";
 import Topbar from "@/components/Topbar";
 import Navbar from "@/components/Navbar";
-import PageHeader from "@/components/PageHeader";
+import HeroCarousel from "@/components/HeroCarousel";
 import SearchModal from "@/components/SearchModal";
 import AboutHonicLearnIntro from "@/components/AboutHonicLearnIntro";
 import VisionMissionSection from "@/components/VisionMissionSection";
@@ -27,7 +27,7 @@ export default function AboutPage() {
       <Topbar />
       <div className="container-fluid position-relative p-0">
         <Navbar />
-        <PageHeader title="About HonicLearn" currentPage="About" />
+        <HeroCarousel title="About HonicLearn" subtitle="Our Story & Vision" showButtons={false} currentPage="About" />
       </div>
       <div className="container py-0 about-quote-wrap" style={{ marginTop: "-2.5rem", marginBottom: 0 }}>
         <div className="row justify-content-center">

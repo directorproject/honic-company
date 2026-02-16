@@ -12,7 +12,19 @@ const slides = [
   { src: "/img/hero-bg-4.png", alt: "Practical Learning - Electronics Soldering" },
 ];
 
-export default function HeroCarousel() {
+interface HeroCarouselProps {
+  title?: string;
+  subtitle?: string;
+  showButtons?: boolean;
+  currentPage?: string;
+}
+
+export default function HeroCarousel({ 
+  title = "Practical Learning for Every Student",
+  subtitle = "Education-Focused Innovation",
+  showButtons = true,
+  currentPage
+}: HeroCarouselProps = {}) {
   const pathname = usePathname();
   const [activeIndex, setActiveIndex] = useState(0);
   const [isInitialized, setIsInitialized] = useState(false);
@@ -85,24 +97,39 @@ export default function HeroCarousel() {
             </div>
             <div className="carousel-caption d-flex flex-column align-items-center justify-content-center" style={{ zIndex: 2 }}>
               <div className="p-3" style={{ maxWidth: 900 }}>
-                <h5 className="text-white text-uppercase mb-3 hero-animate hero-animate-slide-down">
-                  Education-Focused Innovation
-                </h5>
+                {subtitle && (
+                  <h5 className="text-white text-uppercase mb-3 hero-animate hero-animate-slide-down">
+                    {subtitle}
+                  </h5>
+                )}
                 <h1 className="display-1 text-white mb-md-4 hero-animate hero-animate-zoom-in">
-                  Practical Learning for Every Student
+                  {title}
                 </h1>
-                <Link
-                  href="/service"
-                  className="btn btn-primary py-md-3 px-md-5 me-3 hero-animate hero-animate-slide-left"
-                >
-                  Our Solutions
-                </Link>
-                <Link
-                  href="/contact"
-                  className="btn btn-outline-light py-md-3 px-md-5 hero-animate hero-animate-slide-right"
-                >
-                  Contact Us
-                </Link>
+                {currentPage && (
+                  <div className="d-flex justify-content-center align-items-center flex-wrap gap-1 pt-1 mb-3">
+                    <Link href="/" className="h5 text-white text-decoration-none">
+                      Home
+                    </Link>
+                    <i className="far fa-circle text-white px-2 small" />
+                    <span className="h5 text-white">{currentPage}</span>
+                  </div>
+                )}
+                {showButtons && (
+                  <>
+                    <Link
+                      href="/service"
+                      className="btn btn-primary py-md-3 px-md-5 me-3 hero-animate hero-animate-slide-left"
+                    >
+                      Our Solutions
+                    </Link>
+                    <Link
+                      href="/contact"
+                      className="btn btn-outline-light py-md-3 px-md-5 hero-animate hero-animate-slide-right"
+                    >
+                      Contact Us
+                    </Link>
+                  </>
+                )}
               </div>
             </div>
           </div>
