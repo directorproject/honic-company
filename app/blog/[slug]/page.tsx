@@ -22,7 +22,7 @@ const posts: Record<string, BlogPost> = {
   "creative-digital-solutions": {
     title: "Creative & Innovative Digital Solutions",
     date: "Jan 01, 2025",
-    image: "/img/carousel-1.jpg",
+    image: "/img/blog-creative-circuits.png",
     author: "Admin",
     content: [
       "At HonicLearn, creative digital solutions connect curriculum goals with practical execution. We combine physical training systems, guided digital content, and structured delivery to move learners from theory to applied outcomes.",
@@ -33,7 +33,7 @@ const posts: Record<string, BlogPost> = {
   "it-solutions-for-business": {
     title: "Custom IT Solutions for Your Business",
     date: "Jan 02, 2025",
-    image: "/img/carousel-2.jpg",
+    image: "/img/blog-it-solutions.png",
     author: "Admin",
     content: [
       "Institutions and service-driven organizations often need systems that match their exact operations. Off-the-shelf tools may help initially, but custom IT solutions improve long-term efficiency and control.",

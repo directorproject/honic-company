@@ -18,7 +18,7 @@ const posts = [
     excerpt:
       "A practical approach to custom platforms for training operations, reporting, and service growth.",
     date: "Jan 02, 2025",
-    image: "/img/carousel-2.jpg",
+    image: "/img/blog-it-solutions.png",
     author: "Admin",
   },
   {

@@ -42,7 +42,7 @@ const services = [
     title: "Digital Learning Programs",
     icon: "fa fa-universal-access",
     text: "Digital and blended learning tools that complement physical systems.",
-    image: "/img/team-3.jpg",
+    image: "/img/service-digital-kit.png",
     tags: ["Digital", "Blended", "Inclusive"],
   },
 ];

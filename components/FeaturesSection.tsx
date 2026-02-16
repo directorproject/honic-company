@@ -38,8 +38,8 @@ export default function FeaturesSection() {
           <div className="col-lg-4" style={{ minHeight: 350 }}>
             <div className="position-relative h-100 rounded overflow-hidden">
               <Image
-                src="/img/feature.jpg"
-                alt="Features"
+                src="/img/home-three-students.png"
+                alt="Practical Education - Students Learning"
                 fill
                 style={{ objectFit: "cover" }}
                 sizes="(max-width: 992px) 100vw, 33vw"

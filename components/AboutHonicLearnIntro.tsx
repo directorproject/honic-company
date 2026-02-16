@@ -67,7 +67,7 @@ export default function AboutHonicLearnIntro() {
                 style={{ minHeight: 420, background: "#091E3E" }}
               >
                 <Image
-                  src="/img/about.jpg"
+                  src="/img/about-soldering.png"
                   alt="HonicLearn practical learning"
                   fill
                   sizes="(max-width: 991px) 100vw, 50vw"
