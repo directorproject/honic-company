@@ -11,7 +11,7 @@ export default function AboutSection() {
     { title: "Hands-On Learning", image: "/img/blog-workshop-soldering.png" },
     { title: "Industry-Aligned Systems", image: "/img/blog-pcb-workshop.png" },
     { title: "Curriculum-Based Kits", image: "/img/blog-resistor-kits.png" },
-    { title: "Skills Development", image: "/img/feature.jpg" },
+    { title: "Skills Development", image: "/img/home-skills-soldering.png" },
   ];
 
   return (

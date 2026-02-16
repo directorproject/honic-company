@@ -9,7 +9,7 @@ const posts = [
     excerpt:
       "How HonicLearn combines practical systems and digital delivery to turn curriculum into measurable skills.",
     date: "Jan 01, 2025",
-    image: "/img/carousel-1.jpg",
+    image: "/img/blog-creative-digital.png",
     author: "Admin",
   },
   {
@@ -36,7 +36,7 @@ const posts = [
     excerpt:
       "Core cyber security controls every education and training organization should implement first.",
     date: "Jan 04, 2025",
-    image: "/img/about.jpg",
+    image: "/img/blog-cyber-security.png",
     author: "Admin",
   },
   {
@@ -54,7 +54,7 @@ const posts = [
     excerpt:
       "A phased transformation model that helps startups scale operations without losing control.",
     date: "Jan 06, 2025",
-    image: "/img/team-2.jpg",
+    image: "/img/blog-digital-transformation.png",
     author: "Admin",
   },
   {

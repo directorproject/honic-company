@@ -22,7 +22,7 @@ const posts: Record<string, BlogPost> = {
   "creative-digital-solutions": {
     title: "Creative & Innovative Digital Solutions",
     date: "Jan 01, 2025",
-    image: "/img/blog-creative-circuits.png",
+    image: "/img/blog-innovation-hexagon.png",
     author: "Admin",
     content: [
       "At HonicLearn, creative digital solutions connect curriculum goals with practical execution. We combine physical training systems, guided digital content, and structured delivery to move learners from theory to applied outcomes.",
@@ -55,7 +55,7 @@ const posts: Record<string, BlogPost> = {
   "cyber-security-tips": {
     title: "Cyber Security Best Practices in 2025",
     date: "Jan 04, 2025",
-    image: "/img/about.jpg",
+    image: "/img/blog-cyber-security.png",
     author: "Admin",
     content: [
       "As schools and training centers expand digital learning, cyber security becomes a core operational requirement. Protecting devices, accounts, and learning data is now essential.",
@@ -66,7 +66,7 @@ const posts: Record<string, BlogPost> = {
   "web-development-trends": {
     title: "Web Development Trends to Watch",
     date: "Jan 05, 2025",
-    image: "/img/team-1.jpg",
+    image: "/img/blog-web-development.png",
     author: "Admin",
     content: [
       "Web platforms continue moving toward modular architecture, faster delivery, and stronger accessibility standards. For education-focused organizations, this directly improves user experience and adoption.",
@@ -77,7 +77,7 @@ const posts: Record<string, BlogPost> = {
   "digital-transformation": {
     title: "Digital Transformation for Startups",
     date: "Jan 06, 2025",
-    image: "/img/team-2.jpg",
+    image: "/img/blog-digital-transformation.png",
     author: "Admin",
     content: [
       "Digital transformation works best when it addresses operational bottlenecks first. Startups should focus on systems that improve execution, reporting, and customer response time.",

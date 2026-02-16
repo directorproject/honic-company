@@ -7,7 +7,7 @@ const services = [
     title: "Research & Development (R&D)",
     icon: "fa fa-flask",
     text: "Research, prototyping, and system optimization for practical education technologies.",
-    image: "/img/feature.jpg",
+    image: "/img/service-rnd-students.png",
     tags: ["R&D", "Prototyping", "Testing"],
   },
   {
