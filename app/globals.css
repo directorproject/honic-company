@@ -313,6 +313,28 @@ h5, h6, .fw-medium { font-weight: 600 !important; }
   }
 }
 
+/* Hero carousel smooth transitions */
+#header-carousel .carousel-item {
+  transition: opacity 1.5s ease-in-out;
+  position: relative;
+}
+#header-carousel .carousel-item:not(.active) {
+  opacity: 0;
+  display: none;
+}
+#header-carousel .carousel-item.active {
+  opacity: 1;
+  display: block;
+}
+#header-carousel .carousel-fade .carousel-item {
+  opacity: 0;
+  transition-property: opacity;
+  transform: none;
+}
+#header-carousel .carousel-fade .carousel-item.active {
+  opacity: 1;
+}
+
 /* Service cards responsive layout */
 .service-card-layout {
   display: flex;
