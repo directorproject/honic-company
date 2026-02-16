@@ -35,7 +35,7 @@ export default function FeaturesSection() {
               ))}
             </div>
           </div>
-          <div className="col-lg-4" style={{ minHeight: 350 }}>
+          <div className="col-lg-4" style={{ minHeight: 400 }}>
             <div className="position-relative h-100 rounded overflow-hidden">
               <Image
                 src="/img/home-three-students.png"

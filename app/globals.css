@@ -280,8 +280,37 @@ h5, h6, .fw-medium { font-weight: 600 !important; }
 
 /* Blog post single page: image container for consistent fit */
 .blog-post-image {
-  height: 420px;
+  height: 450px;
+  min-height: 350px;
+  max-height: 600px;
   background: #f8f9fa;
+}
+@media (max-width: 768px) {
+  .blog-post-image {
+    height: 300px;
+    min-height: 250px;
+  }
+}
+
+/* Ensure images fit properly in containers */
+.position-relative img,
+.position-relative [data-next-image] {
+  width: 100%;
+  height: 100%;
+}
+
+/* Blog listing images responsive sizing */
+@media (max-width: 576px) {
+  .blog-item .position-relative {
+    height: 220px !important;
+  }
+}
+
+/* Service/Product card images */
+@media (max-width: 768px) {
+  .blog-item .position-relative[style*="height: 260"] {
+    height: 240px !important;
+  }
 }
 
 /* Service cards responsive layout */

@@ -64,7 +64,7 @@ export default function AboutHonicLearnIntro() {
             <AnimateIn animation="fadeUp">
               <div
                 className="position-relative rounded-4 overflow-hidden shadow"
-                style={{ minHeight: 420, background: "#091E3E" }}
+                style={{ minHeight: 450, background: "#091E3E" }}
               >
                 <Image
                   src="/img/about-soldering.png"

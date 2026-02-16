@@ -175,7 +175,7 @@ export default async function BlogPostPage({
                     src={post.image}
                     alt={post.title}
                     fill
-                    style={{ objectFit: "contain" }}
+                    style={{ objectFit: "cover" }}
                     sizes="(max-width: 992px) 100vw, 66vw"
                     unoptimized
                   />

@@ -87,7 +87,7 @@ export default function ServicesSection() {
           <div className="col-lg-4">
             <div
               className="position-relative overflow-hidden h-100 why-choose-image"
-              style={{ minHeight: 340, borderRadius: "12px 0 0 12px" }}
+              style={{ minHeight: 380, borderRadius: "12px 0 0 12px" }}
             >
               <Image
                 src={activeItem.image}

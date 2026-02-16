@@ -125,7 +125,7 @@ export default function ProductsServicesDetail() {
             <div key={service.title} className="col-md-6 col-xl-4">
               <AnimateIn animation="fadeUp" delay={i * 0.04}>
                 <article className="blog-item bg-light rounded overflow-hidden h-100 d-flex flex-column">
-                  <div className="position-relative overflow-hidden" style={{ height: 240 }}>
+                  <div className="position-relative overflow-hidden" style={{ height: 260, minHeight: 240 }}>
                     <Image
                       src={service.image}
                       alt={service.title}

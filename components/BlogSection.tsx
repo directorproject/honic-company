@@ -92,7 +92,7 @@ export default function BlogSection() {
           {posts.map((post) => (
             <div key={post.slug} className="col-lg-4 col-md-6">
               <div className="blog-item bg-light rounded overflow-hidden h-100">
-                <div className="position-relative overflow-hidden" style={{ height: 240 }}>
+                <div className="position-relative overflow-hidden" style={{ height: 260, minHeight: 240 }}>
                   <Image
                     src={post.image}
                     alt={post.title}

@@ -60,7 +60,7 @@ export default function AboutSection() {
                       border: "1px solid rgba(9, 30, 62, 0.06)",
                     }}
                   >
-                    <div className="position-relative" style={{ height: 130 }}>
+                    <div className="position-relative" style={{ height: 150, minHeight: 130 }}>
                       <Image
                         src={tile.image}
                         alt={tile.title}
@@ -101,7 +101,7 @@ export default function AboutSection() {
             </Link>
           </div>
           <div className="col-lg-5">
-            <div className="position-relative rounded overflow-hidden" style={{ height: 440 }}>
+            <div className="position-relative rounded overflow-hidden" style={{ height: 480, minHeight: 400 }}>
               <Image
                 src="/img/home-demonstration.png"
                 alt="Turning Curiosity Into Practical Skills"
