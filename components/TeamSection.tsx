@@ -2,9 +2,9 @@ import Image from "next/image";
 import AnimateIn from "./AnimateIn";
 
 const members = [
-  { img: "/img/team-1.jpg", name: "Full Name", role: "Designation" },
-  { img: "/img/team-2.jpg", name: "Full Name", role: "Designation" },
-  { img: "/img/team-3.jpg", name: "Full Name", role: "Designation" },
+  { img: "/img/home-three-students.png", name: "Full Name", role: "Designation" },
+  { img: "/img/service-rnd-students.png", name: "Full Name", role: "Designation" },
+  { img: "/img/about-soldering.png", name: "Full Name", role: "Designation" },
 ];
 
 const socials = [

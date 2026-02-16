@@ -22,7 +22,7 @@ const highlights = [
     icon: "fa fa-users",
     title: "Inclusive Access",
     text: "Tools and content designed for diverse learners and accessibility needs.",
-    image: "/img/team-3.jpg",
+    image: "/img/home-three-students.png",
   },
   {
     icon: "fa fa-cogs",

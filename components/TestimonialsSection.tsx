@@ -2,10 +2,10 @@ import Image from "next/image";
 import AnimateIn from "./AnimateIn";
 
 const testimonials = [
-  { img: "/img/testimonial-1.jpg", name: "School Partner", role: "Secondary School" },
-  { img: "/img/testimonial-2.jpg", name: "Education Partner", role: "University" },
-  { img: "/img/testimonial-3.jpg", name: "Institution Partner", role: "Education Institution" },
-  { img: "/img/testimonial-4.jpg", name: "Supplier Partner", role: "Local Partner" },
+  { img: "/img/home-three-students.png", name: "School Partner", role: "Secondary School" },
+  { img: "/img/service-rnd-students.png", name: "Education Partner", role: "University" },
+  { img: "/img/home-skills-soldering.png", name: "Institution Partner", role: "Education Institution" },
+  { img: "/img/about-soldering.png", name: "Supplier Partner", role: "Local Partner" },
 ];
 
 const quote =

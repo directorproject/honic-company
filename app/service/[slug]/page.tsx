@@ -16,7 +16,7 @@ const shorten = (value: string, limit = 38) =>
 const services = {
   "research-and-development-r-and-d": {
     title: "Research & Development (R&D)",
-    image: "/img/feature.jpg",
+    image: "/img/service-rnd-students.png",
     intro:
       "Continuous research, innovation, and system development focused on advancing practical, skill-based, and industry-relevant education technologies.",
     details: [
@@ -97,7 +97,7 @@ const services = {
   },
   "digital-learning-programs": {
     title: "Digital Learning Programs",
-    image: "/img/team-3.jpg",
+    image: "/img/service-digital-kit.png",
     intro:
       "Digital and blended learning platforms that complement physical systems with guided modules and inclusive resources.",
     details: [

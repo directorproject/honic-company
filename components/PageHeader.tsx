@@ -6,7 +6,7 @@ interface PageHeaderProps {
   image?: string;
 }
 
-export default function PageHeader({ title, currentPage, image = "/img/carousel-1.jpg" }: PageHeaderProps) {
+export default function PageHeader({ title, currentPage, image = "/img/hero-bg-1.png" }: PageHeaderProps) {
   return (
     <div
       className="page-header-hero container-fluid py-5"

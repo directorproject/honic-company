@@ -75,7 +75,7 @@ export default function VisionMissionSection() {
                       controls
                       playsInline
                       preload="metadata"
-                      poster="/img/about.jpg"
+                      poster="/img/home-demonstration.png"
                       style={{ objectFit: "cover" }}
                     >
                       <source src="/videos/vision.mp4" type="video/mp4" />
