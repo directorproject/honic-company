@@ -11,14 +11,14 @@ const services = [
     tags: ["R&D", "Prototyping", "Testing"],
   },
   {
-    title: "Practical Learning Kits & Industry-Aligned Training Kits",
+    title: "Practical Learning Kits & STEM Training Kits",
     icon: "fa fa-toolbox",
     text: "Hands-on kits aligned to curriculum and industry standards.",
     image: "/img/blog-resistor-kits.png",
     tags: ["Curriculum", "Industry", "Hands-on"],
   },
   {
-    title: "Production-Ready Educational Technologies",
+    title: "Production-Industry-Aligned Training Kits",
     icon: "fa fa-tools",
     text: "Production-capable systems for training and real application.",
     image: "/img/blog-pcb-workshop.png",

@@ -30,8 +30,8 @@ const services = {
     process: ["Discovery & needs assessment", "Prototype & testing", "Pilot & optimization"],
     engagement: "Project-based or retainer R&D with shared milestones and review cycles.",
   },
-  "practical-learning-kits-and-industry-aligned-training-kits": {
-    title: "Practical Learning Kits & Industry-Aligned Training Kits",
+  "practical-learning-kits-and-stem-training-kits": {
+    title: "Practical Learning Kits & STEM Training Kits",
     image: "/img/blog-resistor-kits.png",
     intro:
       "We design, engineer, and deploy hands-on learning kits that convert curriculum goals into measurable practical competencies. Each kit is aligned to real industry workflows so institutions can deliver structured, skills-based training from foundational to advanced levels.",
@@ -47,8 +47,8 @@ const services = {
     engagement:
       "Engagement options include bulk procurement for full-scale deployment or phased rollouts by term, campus, or program. Both models include trainer onboarding, implementation support, maintenance planning, and upgrade pathways for long-term program performance.",
   },
-  "production-ready-educational-technologies": {
-    title: "Production-Ready Educational Technologies",
+  "production-industry-aligned-training-kits": {
+    title: "Production-Industry-Aligned Training Kits",
     image: "/img/blog-pcb-workshop.png",
     intro:
       "Manufacturing of functional systems and devices that serve both as training platforms and operational, production-capable solutions.",

@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Link from "next/link";
 import AnimateIn from "./AnimateIn";
 
@@ -92,24 +91,11 @@ export default function BlogSection() {
           {posts.map((post) => (
             <div key={post.slug} className="col-lg-4 col-md-6">
               <div className="blog-item bg-light rounded overflow-hidden h-100">
-                <div className="position-relative overflow-hidden" style={{ height: 260, minHeight: 240 }}>
-                  <Image
-                    src={post.image}
-                    alt={post.title}
-                    fill
-                    style={{ objectFit: "cover" }}
-                    sizes="(max-width: 768px) 100vw, (max-width: 992px) 50vw, 33vw"
-                    unoptimized
-                  />
-                  <div
-                    className="bg-primary text-white position-absolute bottom-0 start-0 px-3 py-2"
-                    style={{ fontSize: "0.875rem" }}
-                  >
+                <div className="p-4">
+                  <div className="bg-primary text-white d-inline-block px-3 py-2 mb-3" style={{ fontSize: "0.875rem" }}>
                     <i className="fa fa-calendar-alt me-1" />
                     {post.date}
                   </div>
-                </div>
-                <div className="p-4">
                   <div className="d-flex mb-2">
                     <small className="text-primary text-uppercase me-3">
                       <i className="fa fa-user me-1" />
