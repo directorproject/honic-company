@@ -91,11 +91,16 @@ export default function BlogSection() {
           {posts.map((post) => (
             <div key={post.slug} className="col-lg-4 col-md-6">
               <div className="blog-item bg-light rounded overflow-hidden h-100">
-                <div className="p-4">
-                  <div className="bg-primary text-white d-inline-block px-3 py-2 mb-3" style={{ fontSize: "0.875rem" }}>
+                <div className="position-relative overflow-hidden" style={{ height: 260, minHeight: 240 }}>
+                  <div
+                    className="bg-primary text-white position-absolute bottom-0 start-0 px-3 py-2"
+                    style={{ fontSize: "0.875rem" }}
+                  >
                     <i className="fa fa-calendar-alt me-1" />
                     {post.date}
                   </div>
+                </div>
+                <div className="p-4">
                   <div className="d-flex mb-2">
                     <small className="text-primary text-uppercase me-3">
                       <i className="fa fa-user me-1" />

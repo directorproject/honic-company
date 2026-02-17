@@ -30,7 +30,7 @@ const services = {
     process: ["Discovery & needs assessment", "Prototype & testing", "Pilot & optimization"],
     engagement: "Project-based or retainer R&D with shared milestones and review cycles.",
   },
-  "practical-learning-kits-and-stem-training-kits": {
+  "practical-learning-kits-and-industry-aligned-training-kits": {
     title: "Practical Learning Kits & STEM Training Kits",
     image: "/img/blog-resistor-kits.png",
     intro:
@@ -47,7 +47,7 @@ const services = {
     engagement:
       "Engagement options include bulk procurement for full-scale deployment or phased rollouts by term, campus, or program. Both models include trainer onboarding, implementation support, maintenance planning, and upgrade pathways for long-term program performance.",
   },
-  "production-industry-aligned-training-kits": {
+  "production-ready-educational-technologies": {
     title: "Production-Industry-Aligned Training Kits",
     image: "/img/blog-pcb-workshop.png",
     intro:

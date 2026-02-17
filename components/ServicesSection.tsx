@@ -83,14 +83,32 @@ export default function ServicesSection() {
           </p>
         </div>
         <div className="row g-4 align-items-stretch">
-          <div className="col-lg-12">
+          <div className="col-lg-4">
+            <div
+              className="position-relative overflow-hidden h-100 why-choose-image"
+              style={{ minHeight: 380, borderRadius: "12px 0 0 12px" }}
+            >
+              <div
+                className="position-absolute bottom-0 start-0 w-100 p-3"
+                style={{
+                  background:
+                    "linear-gradient(180deg, rgba(9, 30, 62, 0) 0%, rgba(9, 30, 62, 0.88) 100%)",
+                }}
+              >
+                <div className="text-white fw-semibold small">
+                  {typeTarget.slice(0, typedLength)}
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="col-lg-8">
             <div className="row g-4">
               {highlights.map((h, i) => (
                 <div key={i} className="col-md-6">
                   <div
                     className="bg-light h-100 p-4"
                     style={{
-                      borderRadius: "12px",
+                      borderRadius: i % 2 === 0 ? "0 12px 12px 0" : "12px",
                       opacity: i === activeIndex ? 1 : 0.45,
                       border: i === activeIndex ? "1px solid rgba(6, 163, 218, 0.5)" : "1px solid rgba(9, 30, 62, 0.08)",
                       transition: "all 0.35s ease",

@@ -11,6 +11,7 @@ export default function AboutSection() {
     { title: "Hands-On Learning", image: "/img/blog-workshop-soldering.png" },
     { title: "Industry-Aligned Systems", image: "/img/blog-pcb-workshop.png" },
     { title: "Curriculum-Based Kits", image: "/img/blog-resistor-kits.png" },
+    { title: "Skills Development", image: "/img/home-skills-soldering.png" },
   ];
 
   return (
@@ -60,14 +61,16 @@ export default function AboutSection() {
                     }}
                   >
                     <div className="position-relative" style={{ height: 150, minHeight: 130 }}>
-                      <Image
-                        src={tile.image}
-                        alt={tile.title}
-                        fill
-                        sizes="(max-width: 992px) 50vw, 25vw"
-                        style={{ objectFit: "cover" }}
-                        unoptimized
-                      />
+                      {tile.title !== "Skills Development" && (
+                        <Image
+                          src={tile.image}
+                          alt={tile.title}
+                          fill
+                          sizes="(max-width: 992px) 50vw, 25vw"
+                          style={{ objectFit: "cover" }}
+                          unoptimized
+                        />
+                      )}
                       <div
                         className="position-absolute bottom-0 start-0 w-100"
                         style={{
@@ -100,6 +103,8 @@ export default function AboutSection() {
             </Link>
           </div>
           <div className="col-lg-5">
+            <div className="position-relative rounded overflow-hidden" style={{ height: 480, minHeight: 400 }}>
+            </div>
             <div
               className="mt-3"
               style={{
