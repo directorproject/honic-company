@@ -104,6 +104,14 @@ export default function AboutSection() {
           </div>
           <div className="col-lg-5">
             <div className="position-relative rounded overflow-hidden" style={{ height: 480, minHeight: 400 }}>
+              <Image
+                src="/img/home-three-students.png"
+                alt="Students in practical training"
+                fill
+                sizes="(max-width: 992px) 100vw, 42vw"
+                style={{ objectFit: "cover" }}
+                unoptimized
+              />
             </div>
             <div
               className="mt-3"
