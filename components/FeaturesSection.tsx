@@ -15,19 +15,12 @@ const rightFeatures = [
 
 export default function FeaturesSection() {
   const rotatingImages = [
-    "/img/feature-curriculum-1.jpg",
-    "/img/feature-curriculum-2.jpg",
-    "/img/feature-curriculum-3.jpg",
-    "/img/feature-curriculum-4.jpg",
-  ];
-  const fallbackImages = [
     "/img/home-demonstration.png",
     "/img/service-digital-kit.png",
     "/img/service-rnd-pcb.png",
     "/img/home-skills-soldering.png",
   ];
   const [activeImageIndex, setActiveImageIndex] = useState(0);
-  const [failedImages, setFailedImages] = useState<Record<number, boolean>>({});
 
   useEffect(() => {
     const timer = setInterval(() => {
@@ -36,10 +29,6 @@ export default function FeaturesSection() {
 
     return () => clearInterval(timer);
   }, [rotatingImages.length]);
-
-  const imageSrc = failedImages[activeImageIndex]
-    ? fallbackImages[activeImageIndex]
-    : rotatingImages[activeImageIndex];
 
   return (
     <AnimateIn className="container-fluid py-5" animation="fadeUp">
@@ -67,19 +56,16 @@ export default function FeaturesSection() {
           </div>
           <div className="col-lg-4" style={{ minHeight: 400 }}>
             <div
-              className="position-relative h-100 rounded overflow-hidden"
-              style={{ background: "#ffffff", border: "1px solid rgba(9, 30, 62, 0.08)" }}
+              className="position-relative rounded overflow-hidden"
+              style={{ minHeight: 400, background: "#ffffff", border: "1px solid rgba(9, 30, 62, 0.08)" }}
             >
               <Image
-                src={imageSrc}
+                src={rotatingImages[activeImageIndex]}
                 alt="Practical Education Showcase"
                 fill
                 style={{ objectFit: "contain", padding: "0.75rem" }}
                 sizes="(max-width: 992px) 100vw, 33vw"
                 unoptimized
-                onError={() =>
-                  setFailedImages((prev) => ({ ...prev, [activeImageIndex]: true }))
-                }
               />
             </div>
           </div>
