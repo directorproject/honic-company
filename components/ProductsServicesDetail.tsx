@@ -21,7 +21,7 @@ const services = [
     title: "Production-Industry-Aligned Training Kits",
     icon: "fa fa-tools",
     text: "Production-capable systems for training and real application.",
-    image: "/img/paste.png",
+    image: "/img/jdb.png",
     tags: ["Production", "Systems", "Deployment"],
   },
   {
