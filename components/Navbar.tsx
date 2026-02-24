@@ -18,7 +18,6 @@ export default function Navbar() {
     { href: "/", label: "Home" },
     { href: "/about", label: "HonicLearn" },
     { href: "/service", label: "Services" },
-    { href: "/blog", label: "Blog" },
     { href: "/contact", label: "Contact" },
   ];
 

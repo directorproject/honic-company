@@ -1,3 +1,5 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
 import AnimateIn from "./AnimateIn";
@@ -9,9 +11,9 @@ export default function AboutSection() {
   ];
   const featureTiles = [
     { title: "Hands-On Learning", image: "/img/blog-workshop-soldering.png" },
-    { title: "Industry-Aligned Systems", image: "/img/blog-pcb-workshop.png" },
+    { title: "Industry-Aligned Systems", image: "/img/image.png" },
     { title: "Curriculum-Based Kits", image: "/img/blog-resistor-kits.png" },
-    { title: "Skills Development", image: "/img/home-skills-soldering.png" },
+    { title: "Skills Development", image: "/img/electronic%20components.png" },
   ];
 
   return (
@@ -61,16 +63,14 @@ export default function AboutSection() {
                     }}
                   >
                     <div className="position-relative" style={{ height: 150, minHeight: 130 }}>
-                      {tile.title !== "Skills Development" && (
-                        <Image
-                          src={tile.image}
-                          alt={tile.title}
-                          fill
-                          sizes="(max-width: 992px) 50vw, 25vw"
-                          style={{ objectFit: "cover" }}
-                          unoptimized
-                        />
-                      )}
+                      <Image
+                        src={tile.image}
+                        alt={tile.title}
+                        fill
+                        sizes="(max-width: 992px) 50vw, 25vw"
+                        style={{ objectFit: "cover", objectPosition: "center" }}
+                        unoptimized
+                      />
                       <div
                         className="position-absolute bottom-0 start-0 w-100"
                         style={{
@@ -105,7 +105,7 @@ export default function AboutSection() {
           <div className="col-lg-5">
             <div className="position-relative rounded overflow-hidden" style={{ height: 480, minHeight: 400 }}>
               <Image
-                src="/img/home-three-students.png"
+                src="/img/studying.jpg"
                 alt="Students in practical training"
                 fill
                 sizes="(max-width: 992px) 100vw, 42vw"

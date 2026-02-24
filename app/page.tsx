@@ -7,10 +7,8 @@ import HeroCarousel from "@/components/HeroCarousel";
 import SearchModal from "@/components/SearchModal";
 import Facts from "@/components/Facts";
 import AboutSection from "@/components/AboutSection";
-import FeaturesSection from "@/components/FeaturesSection";
 import ServicesSection from "@/components/ServicesSection";
 import QuoteSection from "@/components/QuoteSection";
-import TeamSection from "@/components/TeamSection";
 import VendorsSection from "@/components/VendorsSection";
 import Footer from "@/components/Footer";
 import BackToTop from "@/components/BackToTop";
@@ -28,10 +26,8 @@ export default function Home() {
       <SearchModal />
       <Facts />
       <AboutSection />
-      <FeaturesSection />
       <ServicesSection />
       <QuoteSection />
-      <TeamSection />
       <VendorsSection />
       <Footer />
       <BackToTop />

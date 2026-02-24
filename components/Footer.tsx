@@ -4,7 +4,6 @@ const quickLinks = [
   { label: "Home", href: "/" },
   { label: "About Us", href: "/about" },
   { label: "Products & Services", href: "/service" },
-  { label: "Blog", href: "/blog" },
   { label: "Contact Us", href: "/contact" },
 ];
 
@@ -48,8 +47,13 @@ export default function Footer() {
                     <p className="mb-0">Contact via form</p>
                   </div>
                   <div className="d-flex mt-4">
-                    <a className="btn btn-primary btn-square me-2" href="#">
-                      <i className="fab fa-twitter fw-normal" />
+                    <a
+                      className="btn btn-primary btn-square me-2"
+                      href="https://www.instagram.com/honic_learn?igsh=cDFoeGJqYnYzdG1p"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <i className="fab fa-google fw-normal" />
                     </a>
                     <a className="btn btn-primary btn-square me-2" href="#">
                       <i className="fab fa-facebook-f fw-normal" />
@@ -57,7 +61,12 @@ export default function Footer() {
                     <a className="btn btn-primary btn-square me-2" href="#">
                       <i className="fab fa-linkedin-in fw-normal" />
                     </a>
-                    <a className="btn btn-primary btn-square" href="#">
+                    <a
+                      className="btn btn-primary btn-square"
+                      href="https://www.instagram.com/honic_learn?igsh=cDFoeGJqYnYzdG1p"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
                       <i className="fab fa-instagram fw-normal" />
                     </a>
                   </div>

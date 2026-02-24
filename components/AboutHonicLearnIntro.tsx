@@ -67,7 +67,7 @@ export default function AboutHonicLearnIntro() {
                 style={{ minHeight: 450, background: "#091E3E" }}
               >
                 <Image
-                  src="/img/service-rnd-students.png"
+                  src="/img/ai.png"
                   alt="HonicLearn practical learning"
                   fill
                   sizes="(max-width: 991px) 100vw, 50vw"

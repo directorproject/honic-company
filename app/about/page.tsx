@@ -8,7 +8,6 @@ import SearchModal from "@/components/SearchModal";
 import AboutHonicLearnIntro from "@/components/AboutHonicLearnIntro";
 import VisionMissionSection from "@/components/VisionMissionSection";
 import AchievementsSection from "@/components/AchievementsSection";
-import TeamSection from "@/components/TeamSection";
 import VendorsSection from "@/components/VendorsSection";
 import Footer from "@/components/Footer";
 import BackToTop from "@/components/BackToTop";
@@ -62,7 +61,6 @@ export default function AboutPage() {
       <AboutHonicLearnIntro />
       <VisionMissionSection />
       <AchievementsSection />
-      <TeamSection />
       <VendorsSection />
       <Footer />
       <BackToTop />

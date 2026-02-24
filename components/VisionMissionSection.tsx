@@ -78,7 +78,7 @@ export default function VisionMissionSection() {
                       poster="/img/home-demonstration.png"
                       style={{ objectFit: "cover" }}
                     >
-                      <source src="/videos/vision.mp4" type="video/mp4" />
+                      <source src="/img/grok.mp4" type="video/mp4" />
                       Your browser does not support the video tag.
                     </video>
                   </div>

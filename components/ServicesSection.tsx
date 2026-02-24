@@ -2,6 +2,7 @@
 
 import { useEffect, useMemo, useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import AnimateIn from "./AnimateIn";
 
 const highlights = [
@@ -9,25 +10,25 @@ const highlights = [
     icon: "fa fa-industry",
     title: "Industry-Aligned Systems",
     text: "Built to mirror real production environments so learners gain job-ready skills.",
-    image: "/img/blog-pcb-workshop.png",
+    image: "/img/automation.png",
   },
   {
     icon: "fa fa-toolbox",
     title: "Curriculum-Ready Kits",
     text: "Structured kits that map to classroom outcomes and measurable competencies.",
-    image: "/img/blog-resistor-kits.png",
+    image: "/img/resistor.png",
   },
   {
     icon: "fa fa-users",
     title: "Inclusive Access",
     text: "Tools and content designed for diverse learners and accessibility needs.",
-    image: "/img/home-three-students.png",
+    image: "/img/inclusive.png",
   },
   {
     icon: "fa fa-cogs",
     title: "End-to-End Support",
     text: "Training, maintenance, and upgrades that keep labs running year-round.",
-    image: "/img/blog-learning-kits-resistors.png",
+    image: "/img/holly.png",
   },
 ];
 
@@ -86,8 +87,19 @@ export default function ServicesSection() {
           <div className="col-lg-4">
             <div
               className="position-relative overflow-hidden h-100 why-choose-image"
-              style={{ minHeight: 380, borderRadius: "12px 0 0 12px" }}
+              style={{ minHeight: 380, borderRadius: "12px 0 0 12px", background: "#fff" }}
             >
+              <Image
+                src={activeItem.image}
+                alt={activeItem.title}
+                fill
+                sizes="(max-width: 992px) 100vw, 33vw"
+                style={{
+                  objectFit: "cover",
+                  objectPosition: "center",
+                }}
+                unoptimized
+              />
               <div
                 className="position-absolute bottom-0 start-0 w-100 p-3"
                 style={{

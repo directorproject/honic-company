@@ -5,20 +5,20 @@ import Image from "next/image";
 import AnimateIn from "./AnimateIn";
 
 const leftFeatures = [
-  { icon: "fa fa-cubes", title: "Curriculum-Aligned", text: "STEM and skills-development kits aligned with Tanzania Education and Training Policy (Elimu Amali) for practical, hands-on learning." },
-  { icon: "fa fa-lightbulb", title: "Innovation & R&D", text: "Research and project implementation to identify gaps and develop innovative educational tools for schools and communities." },
+  { icon: "fa fa-cubes", title: "Industry-Aligned Systems", text: "Hands-on systems modeled on real workflows to build practical competence." },
+  { icon: "fa fa-box-open", title: "Curriculum-Ready Kits", text: "Structured kits prepared for guided classroom and lab delivery." },
 ];
 const rightFeatures = [
-  { icon: "fa fa-users-cog", title: "Workshops & Training", text: "Interactive sessions for students and teachers to build practical skills, technical competencies, and problem-solving abilities." },
-  { icon: "fa fa-universal-access", title: "Inclusive Learning", text: "Programs for students with disabilities and underrepresented groups, with accessible kits and sign language support." },
+  { icon: "fa fa-universal-access", title: "Inclusive Access", text: "Learning access designed for broader participation across institutions." },
+  { icon: "fa fa-life-ring", title: "End-to-End Support", text: "Support from setup and training through implementation follow-up." },
 ];
 
 export default function FeaturesSection() {
   const rotatingImages = [
-    "/img/home-demonstration.png",
-    "/img/service-digital-kit.png",
-    "/img/service-rnd-pcb.png",
-    "/img/home-skills-soldering.png",
+    "/img/automation.png",
+    "/img/background%20removed%20electroscope.png",
+    "/img/breadboard.jpg",
+    "/img/meterbridge%20copy.png",
   ];
   const [activeImageIndex, setActiveImageIndex] = useState(0);
 
@@ -34,7 +34,7 @@ export default function FeaturesSection() {
     <AnimateIn className="container-fluid py-5" animation="fadeUp">
       <div className="container py-5">
         <div className="section-title text-center position-relative pb-3 mb-5 mx-auto" style={{ maxWidth: 600 }}>
-          <h5 className="fw-bold text-primary text-uppercase">Why HonicLearn</h5>
+          <h5 className="fw-bold text-primary text-uppercase">Why Choose HonicLearn</h5>
           <h1 className="mb-0">Practical Education That Empowers Every Student</h1>
         </div>
         <div className="row g-5">

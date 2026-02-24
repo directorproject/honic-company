@@ -14,14 +14,14 @@ const services = [
     title: "Practical Learning Kits & STEM Training Kits",
     icon: "fa fa-toolbox",
     text: "Hands-on kits aligned to curriculum and industry standards.",
-    image: "/img/blog-resistor-kits.png",
+    image: "/img/whatsapp.jpeg",
     tags: ["Curriculum", "Industry", "Hands-on"],
   },
   {
     title: "Production-Industry-Aligned Training Kits",
     icon: "fa fa-tools",
     text: "Production-capable systems for training and real application.",
-    image: "/img/blog-pcb-workshop.png",
+    image: "/img/paste.png",
     tags: ["Production", "Systems", "Deployment"],
   },
   {
@@ -35,7 +35,7 @@ const services = [
     title: "Maintenance & Technical Support",
     icon: "fa fa-tools",
     text: "Maintenance, calibration, upgrades, and technical support.",
-    image: "/img/blog-learning-kits-resistors.png",
+    image: "/img/blog-pcb-workshop.png",
     tags: ["Maintenance", "Calibration", "Support"],
   },
   {
@@ -131,7 +131,21 @@ export default function ProductsServicesDetail() {
                       alt={service.title}
                       fill
                       sizes="(max-width: 1200px) 50vw, 33vw"
-                      style={{ objectFit: "cover" }}
+                      style={{
+                        objectFit:
+                          service.title === "Production-Industry-Aligned Training Kits"
+                            ? "contain"
+                            : "cover",
+                        objectPosition: "center",
+                        padding:
+                          service.title === "Production-Industry-Aligned Training Kits"
+                            ? "0.5rem"
+                            : undefined,
+                        background:
+                          service.title === "Production-Industry-Aligned Training Kits"
+                            ? "#fff"
+                            : undefined,
+                      }}
                       unoptimized
                     />
                     <div className="bg-primary text-white position-absolute bottom-0 start-0 px-3 py-2" style={{ fontSize: "0.875rem" }}>
