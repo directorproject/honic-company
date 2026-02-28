@@ -14,7 +14,7 @@ export default function VendorsSection() {
         <div className="bg-white">
           <div className="text-center mb-4">
             <h5 className="fw-bold text-primary text-uppercase">Our Partners</h5>
-            <h2 className="mb-0">Trusted by Leading Organizations</h2>
+            <h2 className="mb-0">Collaborating with Leading Organizations</h2>
           </div>
           <div className="row g-4 align-items-center justify-content-center">
             {partnershipLogos.map(({ src, alt, large, height: customHeight, maxWidth: customMaxWidth }, i) => (
