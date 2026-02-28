@@ -4,7 +4,7 @@ import AnimateIn from "./AnimateIn";
 const partnershipLogos = [
   { src: "/img/dit_company.png", alt: "DIT Company", large: true },
   { src: "/img/ds.png", alt: "DS", large: false },
-  { src: "/img/sdm.png", alt: "SDM", large: true, height: 180, maxWidth: 405 },
+  { src: "/dit%20logo.png", alt: "DIT Logo", large: true },
 ];
 
 export default function VendorsSection() {
