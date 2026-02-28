@@ -43,7 +43,7 @@ export default function VisionMissionSection() {
               delay={0.1}
             >
               <div className="row g-3 align-items-stretch">
-                <div className="col-12 col-lg-7">
+                <div className="col-12">
                   <div className="d-inline-flex align-items-center justify-content-center rounded mb-3 bg-primary" style={{ width: 60, height: 60 }}>
                     <i className="fa fa-eye text-white" />
                   </div>
@@ -58,29 +58,6 @@ export default function VisionMissionSection() {
                     <span className="badge bg-primary-subtle text-primary px-3 py-2">Practical Education</span>
                     <span className="badge bg-dark-subtle text-dark px-3 py-2">Innovation-Driven</span>
                     <span className="badge bg-secondary-subtle text-secondary px-3 py-2">Inclusive Access</span>
-                  </div>
-                </div>
-                <div className="col-12 col-lg-4 mt-2 mt-lg-0">
-                  <div
-                    className="overflow-hidden shadow-sm position-relative h-100"
-                    style={{
-                      background: "#091E3E",
-                      aspectRatio: "2 / 1",
-                      border: "none",
-                      borderRadius: 8,
-                    }}
-                  >
-                    <video
-                      className="w-100 h-100"
-                      controls
-                      playsInline
-                      preload="metadata"
-                      poster="/img/home-demonstration.png"
-                      style={{ objectFit: "cover" }}
-                    >
-                      <source src="/img/grok.mp4" type="video/mp4" />
-                      Your browser does not support the video tag.
-                    </video>
                   </div>
                 </div>
               </div>
