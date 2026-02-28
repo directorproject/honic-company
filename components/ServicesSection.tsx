@@ -22,7 +22,7 @@ const highlights = [
     icon: "fa fa-users",
     title: "Inclusive Access",
     text: "Tools and content designed for diverse learners and accessibility needs.",
-    image: "/img/inclusive.png",
+    image: "/img/inclusive%20image.png",
   },
   {
     icon: "fa fa-cogs",
@@ -95,7 +95,7 @@ export default function ServicesSection() {
                 fill
                 sizes="(max-width: 992px) 100vw, 33vw"
                 style={{
-                  objectFit: "cover",
+                  objectFit: activeItem.title === "Inclusive Access" ? "contain" : "cover",
                   objectPosition: "center",
                 }}
                 unoptimized
@@ -159,3 +159,4 @@ export default function ServicesSection() {
     </AnimateIn>
   );
 }
+
