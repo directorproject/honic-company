@@ -1,0 +1,44 @@
+import { Analytics } from "@vercel/analytics/next";
+import BootstrapClient from "@/components/BootstrapClient";
+import Spinner from "@/components/Spinner";
+import Topbar from "@/components/Topbar";
+import Navbar from "@/components/Navbar";
+import HeroCarousel from "@/components/HeroCarousel";
+import SearchModal from "@/components/SearchModal";
+import Facts from "@/components/Facts";
+import AboutSection from "@/components/AboutSection";
+import ServicesSection from "@/components/ServicesSection";
+import QuoteSection from "@/components/QuoteSection";
+import VendorsSection from "@/components/VendorsSection";
+import Footer from "@/components/Footer";
+import BackToTop from "@/components/BackToTop";
+
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "HonicLearn – Practical Education & STEM Learning | Honic Company",
+  description: "HonicLearn designs and manufactures curriculum-based practical learning kits and skills development tools in Science, Engineering, and Technology. Empowering students across Tanzania.",
+};
+
+export default function LearnHome() {
+  return (
+    <>
+      <BootstrapClient />
+      <Spinner />
+      <Topbar />
+      <div className="container-fluid position-relative p-0">
+        <Navbar />
+        <HeroCarousel />
+      </div>
+      <SearchModal />
+      <Facts />
+      <AboutSection />
+      <ServicesSection />
+      <QuoteSection />
+      <VendorsSection />
+      <Footer />
+      <BackToTop />
+      <Analytics />
+    </>
+  );
+}

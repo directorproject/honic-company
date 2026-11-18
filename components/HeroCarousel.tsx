@@ -107,7 +107,7 @@ export default function HeroCarousel({
                 </h1>
                 {currentPage && (
                   <div className="d-flex justify-content-center align-items-center flex-wrap gap-1 pt-1 mb-3">
-                    <Link href="/" className="h5 text-white text-decoration-none">
+                    <Link href="/learn" className="h5 text-white text-decoration-none">
                       Home
                     </Link>
                     <i className="far fa-circle text-white px-2 small" />

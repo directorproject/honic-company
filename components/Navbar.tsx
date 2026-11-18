@@ -15,7 +15,8 @@ export default function Navbar() {
   }, []);
 
   const navLinks = [
-    { href: "/", label: "Home" },
+    { href: "/", label: "Honic Company" },
+    { href: "/learn", label: "Home" },
     { href: "/about", label: "HonicLearn" },
     { href: "/service", label: "Services" },
     { href: "/contact", label: "Contact" },
@@ -25,7 +26,7 @@ export default function Navbar() {
     <nav
       className={`navbar navbar-expand-lg navbar-dark px-5 py-3 py-lg-0 ${sticky ? "sticky-top shadow-sm" : ""}`}
     >
-      <Link href="/" className="navbar-brand p-0">
+      <Link href="/learn" className="navbar-brand p-0">
         <h1 className="m-0">
           <i className="fa fa-graduation-cap me-2" />HonicLearn
         </h1>

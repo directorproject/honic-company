@@ -20,7 +20,7 @@ export default function PageHeader({ title, currentPage, image = "/img/hero-bg-1
         <div className="col-12 pt-lg-5 mt-lg-5 text-center">
           <h1 className="display-4 text-white">{title}</h1>
           <div className="d-flex justify-content-center align-items-center flex-wrap gap-1 pt-1">
-            <Link href="/" className="h5 text-white text-decoration-none">
+            <Link href="/learn" className="h5 text-white text-decoration-none">
               Home
             </Link>
             <i className="far fa-circle text-white px-2 small" />

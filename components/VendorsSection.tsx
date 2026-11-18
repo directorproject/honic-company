@@ -1,7 +1,7 @@
 import Image from "next/image";
 import AnimateIn from "./AnimateIn";
 
-const partnershipLogos = [
+const partnershipLogos: { src: string; alt: string; large: boolean; height?: number; maxWidth?: number }[] = [
   { src: "/img/dit_company.png", alt: "DIT Company", large: true },
   { src: "/img/ds.png", alt: "DS", large: false },
   { src: "/dit%20logo.png", alt: "DIT Logo", large: true },

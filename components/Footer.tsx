@@ -1,7 +1,8 @@
 import Link from "next/link";
 
 const quickLinks = [
-  { label: "Home", href: "/" },
+  { label: "Honic Company", href: "/" },
+  { label: "Home", href: "/learn" },
   { label: "About Us", href: "/about" },
   { label: "Products & Services", href: "/service" },
   { label: "Contact Us", href: "/contact" },
@@ -15,7 +16,7 @@ export default function Footer() {
           <div className="row gx-5">
             <div className="col-lg-4 col-md-6 footer-about">
               <div className="d-flex flex-column align-items-center justify-content-center text-center h-100 bg-primary p-4">
-                <Link href="/" className="navbar-brand">
+                <Link href="/learn" className="navbar-brand">
                   <h1 className="m-0 text-white">
                     <i className="fa fa-graduation-cap me-2" />HonicLearn
                   </h1>
