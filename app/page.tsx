@@ -12,9 +12,9 @@ import LiveDesk from "@/components/honic/LiveDesk";
 const jakarta = Plus_Jakarta_Sans({ subsets: ["latin"], weight: ["400", "500", "600", "700", "800"] });
 
 export const metadata: Metadata = {
-  title: "Honic Company Limited – IT solutions and related technologies | GasDesk",
+  title: "Honic Company Limited – Engineering solutions and related technologies | GasDesk",
   description:
-    "Honic Company Limited is a Tanzanian company working in IT solutions and related technologies. Makers of GasDesk: sales monitoring, reports and analytics, shift control and TRA fiscal receipts for CNG stations.",
+    "Honic Company Limited is a Tanzanian company working in engineering solutions and related technologies. Makers of GasDesk: sales monitoring, reports and analytics, shift control and TRA fiscal receipts for CNG stations.",
 };
 
 const PHONES = [
@@ -107,7 +107,7 @@ export default function Home() {
               your station.
             </h1>
             <p className={styles.heroLead}>
-              IT solutions and related technologies. With GasDesk, every CNG sale is{" "}
+              Engineering solutions and related technologies. With GasDesk, every CNG sale is{" "}
               <RotatingWord words={["monitored live", "receipted for TRA", "in your sales history", "in your reports", "in your analytics", "tied to a shift"]} />
             </p>
             <div className={styles.heroCtas}>
@@ -150,24 +150,24 @@ export default function Home() {
             <div data-reveal className={styles.rv}>
               <span className={styles.label}>About us</span>
               <h2 className={styles.h2}>Who we are</h2>
-              <p className={styles.lead}>Honic Company Limited is a Tanzanian company based in Dar es Salaam, working in IT solutions and related technologies.</p>
+              <p className={styles.lead}>Honic Company Limited is a Tanzanian company based in Dar es Salaam, working in engineering solutions and related technologies.</p>
               <p className={styles.body}>
                 Our flagship product is GasDesk, built for CNG stations. It records each fill at the dispenser the moment it happens, so owners can monitor sales as they happen, look back through sales history, and check reports and analytics, on a phone or a computer. Every sale gets a TRA fiscal receipt. We install it, train the staff, and support it after go-live.
               </p>
               <div className={styles.facts}>
                 <div><span>Head office</span><strong>Dar es Salaam</strong></div>
                 <div><span>Founded</span><strong>2025</strong></div>
-                <div><span>Sector</span><strong>IT solutions and related technologies</strong></div>
+                <div><span>Sector</span><strong>Engineering solutions and related technologies</strong></div>
               </div>
             </div>
             <div className={styles.vmCol}>
               <div data-reveal className={`${styles.rv} ${styles.vm}`}>
                 <span className={styles.label}>Our vision</span>
-                <p>To be East Africa&apos;s most trusted partner in IT solutions and related technologies, helping every business we serve run with accuracy, transparency and confidence.</p>
+                <p>To be East Africa&apos;s most trusted partner in engineering solutions and related technologies, helping every business we serve run with accuracy, transparency and confidence.</p>
               </div>
               <div data-reveal className={`${styles.rv} ${styles.vm} ${styles.vmAlt}`} style={{ transitionDelay: "120ms" }}>
                 <span className={styles.label}>Our mission</span>
-                <p>To deliver reliable IT solutions that help businesses work accurately and with confidence, starting with GasDesk for CNG stations.</p>
+                <p>To deliver reliable engineering solutions that help businesses work accurately and with confidence, starting with GasDesk for CNG stations.</p>
               </div>
             </div>
           </div>
@@ -414,7 +414,7 @@ export default function Home() {
           <div data-reveal className={`${styles.rv} ${styles.contactHead}`}>
             <span className={styles.logoBig} role="img" aria-label="Honic logo" />
             <h2>Let&apos;s connect your station</h2>
-            <p>Talk to us about GasDesk and TRA fiscal receipts for your CNG station, or about an IT solution for your business.</p>
+            <p>Talk to us about GasDesk and TRA fiscal receipts for your CNG station, or about an engineering solution for your business.</p>
           </div>
           <div className={styles.contacts}>
             <div data-reveal className={styles.rv}>
