@@ -152,7 +152,7 @@ export default function Home() {
               <h2 className={styles.h2}>Who we are</h2>
               <p className={styles.lead}>Honic Company Limited is a Tanzanian company based in Dar es Salaam, working in engineering solutions and related technologies.</p>
               <p className={styles.body}>
-                Our flagship product is GasDesk, built for CNG stations. It records each fill at the dispenser the moment it happens, so owners can monitor sales as they happen, look back through sales history, and check reports and analytics, on a phone or a computer. Every sale gets a TRA fiscal receipt. We install it, train the staff, and support it after go-live.
+                Our flagship solution, GasDesk, is a real-time management system purpose-built for CNG stations. It automatically logs every dispenser transaction as it occurs, giving station owners instant remote access to live sales, historical records, and performance analytics from any mobile device or computer. GasDesk also ensures full compliance by generating a TRA fiscal receipt for every transaction. From hardware installation and staff training to ongoing post-launch support, we provide an end-to-end service for your station.
               </p>
               <div className={styles.facts}>
                 <div><span>Head office</span><strong>Dar es Salaam</strong></div>
